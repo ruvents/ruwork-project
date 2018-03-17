@@ -1,0 +1,46 @@
+language: php
+
+sudo: false
+
+addons:
+    ssh_known_hosts: []
+    postgresql: 9.6
+
+cache:
+    yarn: true
+    directories:
+        - node_modules
+        - $HOME/.composer/cache/files
+
+php: 7.1
+
+env:
+    global:
+        - APP_ENV=dev
+        - APP_SECRET=91833b796aac7eaa2e5666c814da19d3
+        - DATABASE_URL="pgsql://postgres@localhost:5432/project?charset=utf8&serverVersion=9.6"
+        - MAILER_URL=null://localhost
+
+install:
+    - composer install
+
+before_script:
+    - bin/console doctrine:database:create --no-interaction
+    - bin/console doctrine:migrations:migrate --no-interaction --allow-no-migration
+
+script:
+    - bin/console doctrine:schema:validate --no-interaction
+    - bin/console lint:twig --no-interaction templates/
+
+before_deploy:
+    - curl -LO https://deployer.org/deployer.phar
+
+deploy:
+    skip_cleanup: true
+    provider: script
+    script: php deployer.phar deploy prod
+    on:
+        branch: master
+
+notifications:
+    webhooks: https://fathomless-fjord-24024.herokuapp.com/notify

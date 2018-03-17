@@ -1,0 +1,12 @@
+App\Entity\User\User:
+    user (template):
+        email: <email()>
+
+    admin (extends user):
+        email: admin@ruwork.ru
+        roles:
+            - ROLE_USER
+            - ROLE_SUPER_ADMIN
+            - ROLE_CAN_IMPERSONATE
+
+    #user{1..100} (extends user): ~

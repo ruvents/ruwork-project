@@ -1,0 +1,14 @@
+services:
+    _defaults:
+        public: false
+        autowire: true
+        autoconfigure: true
+
+    #Ruvents\TwigExtensions\ClassExtension: ~
+    #Ruvents\TwigExtensions\FileExtension: ~
+    #Ruvents\TwigExtensions\InflectorExtension: ~
+    Ruvents\TwigExtensions\MarkdownExtension: ~
+    #Ruvents\TwigExtensions\SortExtension: ~
+    #Ruvents\TwigExtensions\StringExtension: ~
+    #Ruvents\TwigExtensions\SymfonyIntlExtension: ~
+    #Ruvents\TwigExtensions\TimeExtension: ~

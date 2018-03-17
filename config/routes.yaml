@@ -1,3 +1,19 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+_controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+logout:
+    path: /logout
+
+_admin:
+    prefix: /admin
+    resource: '@RuventsAdminBundle/Resources/config/routes.php'
+
+_upload_download:
+    prefix: /download
+    resource: "@RuworkUploadBundle/Resources/config/download_route.yaml"
+    defaults:
+        class: App\Entity\Upload
+
+_remove_trailing_slash:
+    resource: "@RuworkRoutingToolsBundle/Resources/config/routes.php"

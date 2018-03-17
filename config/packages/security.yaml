@@ -1,24 +1,36 @@
 security:
-    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        in_memory: { memory: ~ }
+        entity_user:
+            entity:
+                class: App\Entity\User\User
+
+    encoders:
+        App\Entity\User\User:
+            algorithm: bcrypt
+
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
+
         main:
+            provider: entity_user
             anonymous: true
+            manual: ~
+            remember_me:
+                secret: "%env(APP_SECRET)%"
+                always_remember_me: true
+            logout:
+                path: logout
+                target: index
+            switch_user:
+                role: ROLE_CAN_IMPERSONATE
+                parameter: _impersonate
 
-            # activate different ways to authenticate
+    role_hierarchy:
+        ROLE_SUPER_ADMIN:
+            - ROLE_ADMIN
 
-            # http_basic: true
-            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-
-            # form_login: true
-            # https://symfony.com/doc/current/security/form_login_setup.html
-
-    # Easy way to control access for large sections of your site
-    # Note: Only the *first* access control that matches will be used
     access_control:
-        # - { path: ^/admin, roles: ROLE_ADMIN }
-        # - { path: ^/profile, roles: ROLE_USER }
+        #- { path: ^(/en)?/admin, roles: ROLE_ADMIN }
+        #- { path: ^(/en)?/profile, roles: IS_AUTHENTICATED_REMEMBERED }
