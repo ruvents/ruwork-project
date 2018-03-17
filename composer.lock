@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7731543227b3de1088d7cd085b46c101",
+    "content-hash": "dd899e7a56cf1deae727931f0b3f39cf",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -6810,16 +6810,16 @@
         },
         {
             "name": "nelmio/alice",
-            "version": "v3.2.1",
+            "version": "v3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/alice.git",
-                "reference": "2744351a5252e7b10329b26af01a04088e63b1ad"
+                "reference": "34ee0035297903dea0bee6dbb9d88daac302f31f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/alice/zipball/2744351a5252e7b10329b26af01a04088e63b1ad",
-                "reference": "2744351a5252e7b10329b26af01a04088e63b1ad",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/34ee0035297903dea0bee6dbb9d88daac302f31f",
+                "reference": "34ee0035297903dea0bee6dbb9d88daac302f31f",
                 "shasum": ""
             },
             "require": {
@@ -6885,7 +6885,7 @@
                 "faker",
                 "test"
             ],
-            "time": "2018-03-03T11:44:28+00:00"
+            "time": "2018-03-17T22:13:13+00:00"
         },
         {
             "name": "nikic/php-parser",

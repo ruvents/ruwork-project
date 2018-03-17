@@ -1,5 +1,7 @@
 {
-    "type": "ruwork-project",
+    "name": "ruwork/project",
+    "description": "A basic Ruwork project.",
+    "type": "project",
     "license": "proprietary",
     "require": {
         "php": "^7.1.3",
