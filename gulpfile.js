@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
@@ -7,19 +7,19 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     livereload = require('gulp-livereload'),
     suppressError = function (error) {
-        console.log(error.toString())
-        this.emit('end')
+        console.log(error.toString());
+        this.emit('end');
     },
     postcss = require('gulp-postcss'),
     concat = require('gulp-concat'),
     del = require('del'),
-    addsrc = require('gulp-add-src')
+    addsrc = require('gulp-add-src');
 
 gulp.task('clean', function () {
     return del.sync([
         'public/build/{css,fonts,js}'
-    ])
-})
+    ]);
+});
 
 gulp.task('scss', function () {
     return gulp
@@ -32,8 +32,8 @@ gulp.task('scss', function () {
         .pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('css', {cwd: 'public/build'}))
-        .pipe(livereload())
-})
+        .pipe(livereload());
+});
 
 gulp.task('scripts', function () {
     return gulp
@@ -43,16 +43,16 @@ gulp.task('scripts', function () {
         ])
         .pipe(concat('app.js'))
         .pipe(addsrc('assets/scripts/!(_)*.js'))
-        .pipe(gulp.dest('js', {cwd: 'public/build'}))
-})
+        .pipe(gulp.dest('js', {cwd: 'public/build'}));
+});
 
 gulp.task('watch', function () {
-    livereload.listen()
+    livereload.listen();
 
-    gulp.watch('assets/scss/**/*.scss', ['scss'])
-    gulp.watch('assets/scripts/**/*.js', ['scripts'])
-})
+    gulp.watch('assets/scss/**/*.scss', ['scss']);
+    gulp.watch('assets/scripts/**/*.js', ['scripts']);
+});
 
-gulp.task('default', ['clean', 'watch', 'scss', 'scripts'])
+gulp.task('default', ['clean', 'watch', 'scss', 'scripts']);
 
-gulp.task('build', ['scss', 'scripts'])
+gulp.task('build', ['scss', 'scripts']);
