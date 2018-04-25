@@ -38,11 +38,12 @@ gulp.task('scss', function () {
 gulp.task('scripts', function () {
     return gulp
         .src([
-            'assets/scripts/_!(main)*.js',
-            'assets/scripts/_main.js'
+            'node_modules/frujax/frujax.js',
+            'vendor/ruwork/frujax-bundle/Resources/public/frujax_block.js',
+            'assets/scripts/app.js'
         ])
         .pipe(concat('app.js'))
-        .pipe(addsrc('assets/scripts/!(_)*.js'))
+        .pipe(addsrc('assets/scripts/metrics.js'))
         .pipe(gulp.dest('js', {cwd: 'public/build'}));
 });
 

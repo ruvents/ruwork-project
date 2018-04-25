@@ -21,7 +21,7 @@
         "ruvents/doctrine-fixes-bundle": "^0.1.1",
         "ruvents/twig-extensions": "^3.2",
         "ruwork/filter-bundle": "^0.1",
-        "ruwork/frujax-bundle": "^0.1",
+        "ruwork/frujax-bundle": "^0.2",
         "ruwork/manual-auth-bundle": "^0.1.2",
         "ruwork/reform-bundle": "^0.1",
         "ruwork/routing-tools-bundle": "^0.1",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd899e7a56cf1deae727931f0b3f39cf",
+    "content-hash": "231e1e0cd557768ed4912c9742b19bea",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -3105,16 +3105,16 @@
         },
         {
             "name": "ruwork/frujax-bundle",
-            "version": "0.1.1",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-frujax-bundle.git",
-                "reference": "6eae27fb3eed24060093af450ceab4b36cb797d2"
+                "reference": "64ce0ed5b6b8afa1cbb74db8ef8edb9fff4ba814"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-frujax-bundle/zipball/6eae27fb3eed24060093af450ceab4b36cb797d2",
-                "reference": "6eae27fb3eed24060093af450ceab4b36cb797d2",
+                "url": "https://api.github.com/repos/ruvents/ruwork-frujax-bundle/zipball/64ce0ed5b6b8afa1cbb74db8ef8edb9fff4ba814",
+                "reference": "64ce0ed5b6b8afa1cbb74db8ef8edb9fff4ba814",
                 "shasum": ""
             },
             "require": {
@@ -3154,7 +3154,7 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-02-16T12:50:20+00:00"
+            "time": "2018-04-25T09:40:48+00:00"
         },
         {
             "name": "ruwork/manual-auth-bundle",
