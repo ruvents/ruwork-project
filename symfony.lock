@@ -230,6 +230,12 @@
     "ruwork/ruwork-bundle": {
         "version": "0.1.2"
     },
+    "ruwork/synchronizer": {
+        "version": "0.1.1"
+    },
+    "ruwork/synchronizer-bundle": {
+        "version": "0.1.0"
+    },
     "ruwork/upload-bundle": {
         "version": "0.1.3"
     },
