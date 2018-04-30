@@ -200,6 +200,9 @@
     "ruvents/twig-extensions": {
         "version": "3.2.2"
     },
+    "ruwork/doctrine-behaviors-bundle": {
+        "version": "0.1.1"
+    },
     "ruwork/feature-bundle": {
         "version": "0.1.0"
     },

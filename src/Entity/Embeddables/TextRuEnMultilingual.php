@@ -5,27 +5,33 @@ declare(strict_types=1);
 namespace App\Entity\Embeddables;
 
 use Doctrine\ORM\Mapping as ORM;
-use Ruvents\DoctrineBundle\Translations\AbstractTranslations;
+use Ruwork\DoctrineBehaviorsBundle\Multilingual\AbstractMultilingual;
 
 /**
- * @ORM\Embeddable()
+ * @ORM\Embeddable
  */
-class TextRuEnTranslations extends AbstractTranslations
+final class TextRuEnMultilingual extends AbstractMultilingual
 {
     /**
      * @ORM\Column(type="text", nullable=true)
      */
-    private $ru;
+    protected $ru;
 
     /**
      * @ORM\Column(type="text", nullable=true)
      */
-    private $en;
+    protected $en;
 
     public function __construct(string $ru = null, string $en = null)
     {
+        parent::__construct();
         $this->ru = $ru;
         $this->en = $en;
+    }
+
+    public function __toString(): string
+    {
+        return (string) $this->getCurrent();
     }
 
     public function getRu(): ?string
@@ -55,9 +61,11 @@ class TextRuEnTranslations extends AbstractTranslations
     /**
      * {@inheritdoc}
      */
-    protected function getFallbackLocales(): \Generator
+    protected function getLocales(): array
     {
-        yield 'ru';
-        yield 'en';
+        return [
+            'ru',
+            'en',
+        ];
     }
 }

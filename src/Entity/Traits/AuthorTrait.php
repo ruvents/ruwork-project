@@ -6,7 +6,7 @@ namespace App\Entity\Traits;
 
 use App\Entity\User\User;
 use Doctrine\ORM\Mapping as ORM;
-use Ruvents\DoctrineBundle\Mapping\Author;
+use Ruwork\DoctrineBehaviorsBundle\Mapping\Author;
 
 trait AuthorTrait
 {
