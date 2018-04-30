@@ -5,26 +5,28 @@ declare(strict_types=1);
 namespace App\Entity\Embeddables;
 
 use Doctrine\ORM\Mapping as ORM;
-use Ruwork\DoctrineBehaviorsBundle\Multilingual\AbstractMultilingual;
+use Ruwork\DoctrineBehaviorsBundle\Multilingual\CurrentLocaleAwareInterface;
+use Ruwork\DoctrineBehaviorsBundle\Multilingual\MultilingualTrait;
 
 /**
  * @ORM\Embeddable
  */
-final class TextRuEnMultilingual extends AbstractMultilingual
+final class TextRuEnMultilingual implements CurrentLocaleAwareInterface
 {
-    /**
-     * @ORM\Column(type="text", nullable=true)
-     */
-    protected $ru;
+    use MultilingualTrait;
 
     /**
      * @ORM\Column(type="text", nullable=true)
      */
-    protected $en;
+    private $ru;
+
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $en;
 
     public function __construct(string $ru = null, string $en = null)
     {
-        parent::__construct();
         $this->ru = $ru;
         $this->en = $en;
     }
@@ -67,5 +69,13 @@ final class TextRuEnMultilingual extends AbstractMultilingual
             'ru',
             'en',
         ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function getLocaleValue(string $locale)
+    {
+        return $this->$locale;
     }
 }
