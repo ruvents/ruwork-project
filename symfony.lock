@@ -185,9 +185,6 @@
     "ruvents/admin-bundle": {
         "version": "0.7.16"
     },
-    "ruvents/doctrine-bundle": {
-        "version": "0.5.1"
-    },
     "ruvents/doctrine-fixes-bundle": {
         "version": "0.1.1"
     },
