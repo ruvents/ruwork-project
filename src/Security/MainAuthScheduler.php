@@ -8,7 +8,7 @@ use App\Entity\User\User;
 use Ruwork\ManualAuthBundle\ManualAuthScheduler;
 use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 
-final class MainFirewallAuthScheduler
+final class MainAuthScheduler
 {
     private $scheduler;
 
@@ -19,7 +19,7 @@ final class MainFirewallAuthScheduler
 
     public function authenticate(User $user): void
     {
-        $this->scheduler->schedule(Firewalls::MAIN, new UsernamePasswordToken(
+        $this->scheduler->schedule('main', new UsernamePasswordToken(
             $user,
             $user->getPassword(),
             'entity_user',
