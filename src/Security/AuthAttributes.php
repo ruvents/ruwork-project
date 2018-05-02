@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Security;
 
-final class Roles
+final class AuthAttributes
 {
     const ROLE_USER = 'ROLE_USER';
     const ROLE_ADMIN = 'ROLE_ADMIN';
