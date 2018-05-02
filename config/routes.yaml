@@ -8,6 +8,17 @@ _controllers:
     options:
         prefix_variable: _locale
 
+about:
+    path: /about
+    defaults:
+        _controller: ruwork_template_i18n.controller
+        _locale: "%locale%"
+        template: about.html.twig
+    requirements:
+        _locale: "%locales_pattern%"
+    options:
+        prefix_variable: _locale
+
 logout:
     path: /logout
 

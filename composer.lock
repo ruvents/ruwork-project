@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2cdda1ce46666e81cc9a1bc142001c4",
+    "content-hash": "2c5a681df4d8c646c4165f8ab9c64f4f",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -3751,16 +3751,16 @@
         },
         {
             "name": "ruwork/template-i18n-bundle",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-template-i18n-bundle.git",
-                "reference": "78d154bf829859815641ba70b5b1384725823bea"
+                "reference": "3cb96fac202638b480a87eabd2a37580a8052fb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-template-i18n-bundle/zipball/78d154bf829859815641ba70b5b1384725823bea",
-                "reference": "78d154bf829859815641ba70b5b1384725823bea",
+                "url": "https://api.github.com/repos/ruvents/ruwork-template-i18n-bundle/zipball/3cb96fac202638b480a87eabd2a37580a8052fb6",
+                "reference": "3cb96fac202638b480a87eabd2a37580a8052fb6",
                 "shasum": ""
             },
             "require": {
@@ -3801,7 +3801,7 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-05-02T19:04:18+00:00"
+            "time": "2018-05-02T19:40:40+00:00"
         },
         {
             "name": "ruwork/upload-bundle",
