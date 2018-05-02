@@ -1,0 +1,3 @@
+ruwork_template_i18n:
+    naming:
+        locale_suffix_pattern: "%locales_pattern%"

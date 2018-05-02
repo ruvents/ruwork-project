@@ -1,6 +1,12 @@
 _controllers:
     resource: ../src/Controller/
     type: annotation
+    defaults:
+        _locale: "%locale%"
+    requirements:
+        _locale: "%locales_pattern%"
+    options:
+        prefix_variable: _locale
 
 logout:
     path: /logout

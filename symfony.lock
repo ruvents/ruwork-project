@@ -239,6 +239,9 @@
     "ruwork/synchronizer-bundle": {
         "version": "0.1.0"
     },
+    "ruwork/template-i18n-bundle": {
+        "version": "0.1.2"
+    },
     "ruwork/upload-bundle": {
         "version": "0.1.3"
     },
