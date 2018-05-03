@@ -8,9 +8,9 @@ _controllers:
     options:
         prefix_variable: _locale
 
-about:
+about: &static
     path: /about
-    defaults:
+    defaults: &static_defaults
         _controller: ruwork_template_i18n.controller
         _locale: "%locale%"
         template: about.html.twig
@@ -18,6 +18,13 @@ about:
         _locale: "%locales_pattern%"
     options:
         prefix_variable: _locale
+
+#new:
+#    <<: *static
+#    path: /new
+#    defaults:
+#        <<: *static_defaults
+#        template: index.html.twig
 
 logout:
     path: /logout
