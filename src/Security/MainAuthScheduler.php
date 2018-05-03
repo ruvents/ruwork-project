@@ -19,11 +19,7 @@ final class MainAuthScheduler
 
     public function authenticate(User $user): void
     {
-        $this->scheduler->schedule('main', new UsernamePasswordToken(
-            $user,
-            $user->getPassword(),
-            'entity_user',
-            $user->getRoles()
-        ));
+        $token = new UsernamePasswordToken($user, $user->getPassword(), '', $user->getRoles());
+        $this->scheduler->schedule('main', $token);
     }
 }
