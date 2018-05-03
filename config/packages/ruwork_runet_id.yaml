@@ -1,0 +1,3 @@
+ruwork_runet_id:
+    key: "%runet_id.key%"
+    secret: "%runet_id.secret%"

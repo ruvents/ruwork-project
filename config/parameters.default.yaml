@@ -1,4 +1,6 @@
 parameters:
+    metrics_enabled: false
+    runet_id.key: key
+    runet_id.secret: secret
     swiftmailer.dev.delivery_address: test@test.test
     swiftmailer.dev.sender_address: test@test.test
-    metrics_enabled: false

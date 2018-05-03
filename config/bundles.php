@@ -33,6 +33,7 @@ return [
     Ruwork\PolyfillFormDTIBundle\RuworkPolyfillFormDTIBundle::class => ['all' => true],
     Ruwork\ReformBundle\RuworkReformBundle::class => ['all' => true],
     Ruwork\RoutingToolsBundle\RuworkRoutingToolsBundle::class => ['all' => true],
+    Ruwork\RunetIdBundle\RuworkRunetIdBundle::class => ['all' => true],
     Ruwork\RuworkBundle\RuworkBundle::class => ['all' => true],
     Ruwork\SynchronizerBundle\RuworkSynchronizerBundle::class => ['all' => true],
     Ruwork\TemplateI18nBundle\RuworkTemplateI18nBundle::class => ['all' => true],
