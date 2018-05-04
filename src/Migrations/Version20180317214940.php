@@ -9,6 +9,9 @@ use Doctrine\DBAL\Schema\Schema;
 
 final class Version20180317214940 extends AbstractMigration
 {
+    /**
+     * {@inheritdoc}
+     */
     public function up(Schema $schema)
     {
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'postgresql', 'Migration can only be executed safely on \'postgresql\'.');
@@ -17,6 +20,9 @@ final class Version20180317214940 extends AbstractMigration
         $this->addSql('COMMENT ON COLUMN user_user.roles IS \'(DC2Type:simple_array)\'');
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function down(Schema $schema)
     {
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'postgresql', 'Migration can only be executed safely on \'postgresql\'.');
