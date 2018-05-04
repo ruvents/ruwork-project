@@ -1,7 +1,6 @@
 imports:
     - { resource: 'parameters.default.yaml' }
     - { resource: 'parameters.yaml' }
-    - { resource: 'admin.yaml' }
 
 parameters:
     locale: ru
