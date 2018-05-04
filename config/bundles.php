@@ -18,7 +18,7 @@ return [
     Http\HttplugBundle\HttplugBundle::class => ['all' => true],
     Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['dev' => true],
     Hostnet\Bundle\FormHandlerBundle\HostnetFormHandlerBundle::class => ['all' => true],
-    Ivory\CKEditorBundle\IvoryCKEditorBundle::class => ['all' => true],
+    FOS\CKEditorBundle\FOSCKEditorBundle::class => ['all' => true],
     Nelmio\Alice\Bridge\Symfony\NelmioAliceBundle::class => ['dev' => true],
     Fidry\AliceDataFixtures\Bridge\Symfony\FidryAliceDataFixturesBundle::class => ['dev' => true],
     Hautelook\AliceBundle\HautelookAliceBundle::class => ['dev' => true],

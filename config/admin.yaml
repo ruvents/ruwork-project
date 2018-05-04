@@ -5,7 +5,7 @@ ruvents_admin:
     forms:
         default_theme: admin/forms.html.twig
         type_aliases:
-            ckeditor: Ivory\CKEditorBundle\Form\Type\CKEditorType
+            ck_editor: FOS\CKEditorBundle\Form\Type\CKEditorType
 
     menu:
         -
