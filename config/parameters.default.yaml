@@ -1,5 +1,5 @@
 parameters:
-    metrics_enabled: false
+    feature.metrics: false
     runet_id.key: key
     runet_id.secret: secret
     swiftmailer.dev.delivery_address: test@test.test

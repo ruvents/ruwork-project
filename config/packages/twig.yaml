@@ -4,4 +4,3 @@ twig:
     strict_variables: '%kernel.debug%'
     globals:
         locales: "%locales%"
-        metrics_enabled: "%metrics_enabled%"

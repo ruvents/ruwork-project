@@ -6,7 +6,7 @@
     <title>{% block title '' %}</title>
     <link rel="stylesheet" href="{{ asset('build/css/app.min.css') }}">
     {% block css '' %}
-    {% if metrics_enabled %}
+    {% if feature('metrics') %}
         {% import 'macros/metrics.html.twig' as metrics %}
         {{ metrics.yandex_metrika() }}
         {{ metrics.google_analytics() }}
@@ -22,7 +22,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="{{ asset('build/js/app.js') }}"></script>
 {% block js '' %}
-{% if metrics_enabled %}
+{% if feature('metrics') %}
     <script src="{{ asset('build/js/metrics.js') }}"></script>
 {% endif %}
 {% if app.debug %}

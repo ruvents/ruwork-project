@@ -20,3 +20,6 @@ services:
     App\Controller\:
         resource: '../src/Controller'
         public: true
+
+    App\Feature\MetricsFeature:
+        $available: "%feature.metrics%"
