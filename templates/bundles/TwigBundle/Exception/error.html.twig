@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title status_text %}
+
+{% block main %}
+    <div class="alert alert-danger" role="alert">
+        <strong>{{ status_code }}</strong>
+        {{ status_text }}
+    </div>
+{% endblock %}
