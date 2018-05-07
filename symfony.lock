@@ -197,6 +197,9 @@
     "ruvents/twig-extensions": {
         "version": "3.2.2"
     },
+    "ruwork/annotation-tools": {
+        "version": "0.1.1"
+    },
     "ruwork/doctrine-behaviors-bundle": {
         "version": "0.1.1"
     },
