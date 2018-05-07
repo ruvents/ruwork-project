@@ -12,6 +12,11 @@ services:
         autowire: true
         autoconfigure: true
         public: false
+        bind:
+            #$debug: "%kernel.debug%"
+            #$defaultLocale: "%kernel.default_locale%"
+            #$environment: "%kernel.environment%"
+            #$projectDir: "%kernel.project_dir%"
 
     App\:
         resource: '../src/*'
