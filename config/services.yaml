@@ -17,13 +17,14 @@ services:
             #$defaultLocale: "%kernel.default_locale%"
             #$environment: "%kernel.environment%"
             #$projectDir: "%kernel.project_dir%"
+            #$publicDir: "%kernel.project_dir%/public"
 
     App\:
         resource: '../src/*'
         exclude: '../src/{Entity,Migrations,Kernel.php}'
 
     App\Controller\:
-        resource: '../src/Controller'
+        resource: '../src/Controller/*'
         public: true
 
     App\Feature\MetricsFeature:
