@@ -5,13 +5,13 @@ declare(strict_types=1);
 namespace App\Entity\Embeddables;
 
 use Doctrine\ORM\Mapping as ORM;
-use Ruwork\DoctrineBehaviorsBundle\Multilingual\CurrentLocaleAwareInterface;
+use Ruwork\DoctrineBehaviorsBundle\Multilingual\MultilingualInterface;
 use Ruwork\DoctrineBehaviorsBundle\Multilingual\MultilingualTrait;
 
 /**
  * @ORM\Embeddable
  */
-final class TextRuEnMultilingual implements CurrentLocaleAwareInterface
+final class TextRuEnMultilingual implements MultilingualInterface
 {
     use MultilingualTrait;
 
