@@ -29,6 +29,7 @@ host('prod')
 set('repository', 'git@github.com:ruvents/ruwork-project.git');
 
 set('shared_dirs', [
+    'public/cache',
     'public/uploads',
     'var/log',
 ]);

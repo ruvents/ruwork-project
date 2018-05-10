@@ -1,10 +1,11 @@
-/config/parameters.yaml
 /node_modules/
 /public/build/
+/public/cache/
 /public/uploads/
+/templates/test/
+/config/parameters.yaml
 /src/Command/TestCommand.php
 /src/Controller/TestController.php
-/templates/test/
 
 ###> symfony/framework-bundle ###
 .env

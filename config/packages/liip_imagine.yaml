@@ -1,0 +1,16 @@
+liip_imagine:
+    driver: gd
+
+    loaders:
+        default:
+            filesystem:
+                data_root:
+                    - "%liip_imagine.root%"
+
+    filter_sets:
+        #thumbnail:
+        #    filters:
+        #        thumbnail:
+        #            size:          [200, 200]
+        #            mode:          outbound
+        #            allow_upscale: true

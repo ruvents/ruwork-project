@@ -101,8 +101,20 @@
     "hostnet/form-handler-component": {
         "version": "1.5.2"
     },
+    "imagine/imagine": {
+        "version": "v0.7.1"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
+    },
+    "liip/imagine-bundle": {
+        "version": "1.8",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.8",
+            "ref": "d2a601ea5ccad81de2a131ed68481d012ed4667c"
+        }
     },
     "monolog/monolog": {
         "version": "1.23.0"
@@ -446,6 +458,9 @@
             "ref": "3db029c03e452b4a23f7fc45cec7c922c2247eb8"
         }
     },
+    "symfony/templating": {
+        "version": "v4.0.9"
+    },
     "symfony/translation": {
         "version": "3.3",
         "recipe": {
@@ -492,6 +507,15 @@
             "branch": "master",
             "version": "3.3",
             "ref": "c72d107d077f1654428edaed69415d0228c1aefe"
+        }
+    },
+    "symfony/workflow": {
+        "version": "3.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "7c8798612bf94fbe4cb75056a4cd7ea3a9183698"
         }
     },
     "symfony/yaml": {

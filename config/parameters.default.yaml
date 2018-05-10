@@ -1,5 +1,6 @@
 parameters:
     feature.metrics: false
+    liip_imagine.root: "%kernel.project_dir%/public"
     runet_id.key: key
     runet_id.secret: secret
     swiftmailer.dev.delivery_address: test@test.test
