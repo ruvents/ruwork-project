@@ -12,4 +12,8 @@ use Ruwork\UploadBundle\Entity\AbstractUpload;
  */
 class Upload extends AbstractUpload
 {
+    public function isPersisted(): bool
+    {
+        return null !== $this->path;
+    }
 }
