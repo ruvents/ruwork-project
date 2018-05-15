@@ -1,0 +1,2 @@
+ruwork_upload:
+    default_form_type: App\Form\Type\UploadType
