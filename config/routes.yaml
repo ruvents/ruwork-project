@@ -39,5 +39,8 @@ _upload_download:
     defaults:
         class: App\Entity\Upload
 
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.yaml"
+
 _remove_trailing_slash:
     resource: "@RuworkRoutingToolsBundle/Resources/config/routes.php"
