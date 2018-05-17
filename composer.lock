@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65733e3c2854ebb452579330b0729ade",
+    "content-hash": "3b7cef69d027ae10bf4979d12be35501",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -826,16 +826,16 @@
         },
         {
             "name": "doctrine/migrations",
-            "version": "v1.7.1",
+            "version": "v1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "d3e8b903233d5fb7f00193c95eec501f27c0b908"
+                "reference": "3e7656c5adfd9b7d0d8757aa1e9e8daf43a6f200"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/d3e8b903233d5fb7f00193c95eec501f27c0b908",
-                "reference": "d3e8b903233d5fb7f00193c95eec501f27c0b908",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/3e7656c5adfd9b7d0d8757aa1e9e8daf43a6f200",
+                "reference": "3e7656c5adfd9b7d0d8757aa1e9e8daf43a6f200",
                 "shasum": ""
             },
             "require": {
@@ -895,7 +895,7 @@
                 "database",
                 "migrations"
             ],
-            "time": "2018-05-07T12:37:11+00:00"
+            "time": "2018-05-09T21:04:56+00:00"
         },
         {
             "name": "doctrine/orm",
@@ -1218,16 +1218,16 @@
         },
         {
             "name": "gregwar/captcha",
-            "version": "v1.1.5",
+            "version": "v1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Gregwar/Captcha.git",
-                "reference": "1d06ac8e12d2b3e0df39586d78b9f50e086a0bea"
+                "reference": "a96d8dffc80d6213958bd19fbdef1555e8b63ca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Gregwar/Captcha/zipball/1d06ac8e12d2b3e0df39586d78b9f50e086a0bea",
-                "reference": "1d06ac8e12d2b3e0df39586d78b9f50e086a0bea",
+                "url": "https://api.github.com/repos/Gregwar/Captcha/zipball/a96d8dffc80d6213958bd19fbdef1555e8b63ca3",
+                "reference": "a96d8dffc80d6213958bd19fbdef1555e8b63ca3",
                 "shasum": ""
             },
             "require": {
@@ -1267,7 +1267,7 @@
                 "captcha",
                 "spam"
             ],
-            "time": "2017-12-30T16:18:44+00:00"
+            "time": "2018-04-24T09:20:08+00:00"
         },
         {
             "name": "gregwar/captcha-bundle",
@@ -3391,16 +3391,16 @@
         },
         {
             "name": "ruwork/frujax-bundle",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-frujax-bundle.git",
-                "reference": "64ce0ed5b6b8afa1cbb74db8ef8edb9fff4ba814"
+                "reference": "bebae12f6eb42011f68d241ad5bd327a5600d408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-frujax-bundle/zipball/64ce0ed5b6b8afa1cbb74db8ef8edb9fff4ba814",
-                "reference": "64ce0ed5b6b8afa1cbb74db8ef8edb9fff4ba814",
+                "url": "https://api.github.com/repos/ruvents/ruwork-frujax-bundle/zipball/bebae12f6eb42011f68d241ad5bd327a5600d408",
+                "reference": "bebae12f6eb42011f68d241ad5bd327a5600d408",
                 "shasum": ""
             },
             "require": {
@@ -3440,7 +3440,7 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-04-25T09:40:48+00:00"
+            "time": "2018-05-10T12:58:23+00:00"
         },
         {
             "name": "ruwork/manual-auth-bundle",
@@ -3757,16 +3757,16 @@
         },
         {
             "name": "ruwork/routing-tools-bundle",
-            "version": "0.1.1",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-routing-tools-bundle.git",
-                "reference": "85a11c5f92ac694f31a865ba9e6978143355be67"
+                "reference": "c7f031be0686ffdedf228ae1cf5d8e18abb9bdc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-routing-tools-bundle/zipball/85a11c5f92ac694f31a865ba9e6978143355be67",
-                "reference": "85a11c5f92ac694f31a865ba9e6978143355be67",
+                "url": "https://api.github.com/repos/ruvents/ruwork-routing-tools-bundle/zipball/c7f031be0686ffdedf228ae1cf5d8e18abb9bdc1",
+                "reference": "c7f031be0686ffdedf228ae1cf5d8e18abb9bdc1",
                 "shasum": ""
             },
             "require": {
@@ -3808,7 +3808,7 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-02-17T00:10:45+00:00"
+            "time": "2018-05-11T12:41:28+00:00"
         },
         {
             "name": "ruwork/runet-id-bundle",
@@ -3872,16 +3872,16 @@
         },
         {
             "name": "ruwork/ruwork-bundle",
-            "version": "0.1.4",
+            "version": "0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-bundle.git",
-                "reference": "111ef61d5c8f2e461a9f91e96d7b13df71d612dc"
+                "reference": "0237d2625678b1bffd9e0c95e06ca4de64be2b3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-bundle/zipball/111ef61d5c8f2e461a9f91e96d7b13df71d612dc",
-                "reference": "111ef61d5c8f2e461a9f91e96d7b13df71d612dc",
+                "url": "https://api.github.com/repos/ruvents/ruwork-bundle/zipball/0237d2625678b1bffd9e0c95e06ca4de64be2b3a",
+                "reference": "0237d2625678b1bffd9e0c95e06ca4de64be2b3a",
                 "shasum": ""
             },
             "require": {
@@ -3931,7 +3931,7 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-03-17T21:40:05+00:00"
+            "time": "2018-04-29T12:00:08+00:00"
         },
         {
             "name": "ruwork/synchronizer",
