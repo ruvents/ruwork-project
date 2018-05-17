@@ -1,6 +1,6 @@
 /node_modules/
 /public/build/
-/public/cache/
+/public/media/
 /public/uploads/
 /templates/test/
 /config/parameters.yaml
