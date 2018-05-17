@@ -1,0 +1,6 @@
+{% use 'bootstrap_4_layout.html.twig' %}
+
+{% block form_start -%}
+    {% if frujax is defined %}{% set attr = attr|merge({'data-frujax': frujax|json_encode}) %}{% endif -%}
+    {{ parent() -}}
+{% endblock %}
