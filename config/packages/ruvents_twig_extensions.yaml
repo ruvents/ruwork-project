@@ -7,6 +7,9 @@ services:
     #Ruvents\TwigExtensions\ClassExtension: ~
     #Ruvents\TwigExtensions\FileExtension: ~
     #Ruvents\TwigExtensions\InflectorExtension: ~
+    Ruvents\TwigExtensions\IntlDateExtension:
+        tags:
+            - { name: twig.extension, priority: -100 }
     Ruvents\TwigExtensions\MarkdownExtension: ~
     #Ruvents\TwigExtensions\SortExtension: ~
     #Ruvents\TwigExtensions\StringExtension: ~
