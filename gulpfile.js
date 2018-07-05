@@ -38,8 +38,9 @@ gulp.task('scss', function () {
 gulp.task('scripts', function () {
     return gulp
         .src([
-            'node_modules/frujax/frujax.js',
-            'vendor/ruwork/frujax-bundle/Resources/public/frujax_block.js',
+            'node_modules/@ruwork/frujax/frujax.js',
+            'vendor/ruwork/frujax-bundle/Resources/public/frujax_part.js',
+            'vendor/ruwork/frujax-bundle/Resources/public/frujax_hide_form_errors.js',
             'assets/scripts/app.js'
         ])
         .pipe(concat('app.js'))

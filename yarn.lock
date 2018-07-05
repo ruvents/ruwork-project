@@ -19,6 +19,10 @@
     normalize-path "^2.0.1"
     through2 "^2.0.3"
 
+"@ruwork/frujax@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@ruwork/frujax/-/frujax-0.7.2.tgz#3d211a3f28277851e38711129c7a8cb66def6217"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -1285,10 +1289,6 @@ fragment-cache@^0.2.1:
 from@~0:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/from/-/from-0.1.7.tgz#83c60afc58b9c56997007ed1a768b3ab303a44fe"
-
-frujax@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/frujax/-/frujax-0.4.0.tgz#739628f8c23c4f2ce01ab9d8bf758f9aecb58e96"
 
 fs-minipass@^1.2.5:
   version "1.2.5"

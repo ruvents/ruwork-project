@@ -4,3 +4,8 @@
     {% if frujax is defined %}{% set attr = attr|merge({'data-frujax': frujax|json_encode}) %}{% endif -%}
     {{ parent() -}}
 {% endblock %}
+
+{% block attributes -%}
+    {% if frujax is defined %}{% set attr = attr|merge({'data-frujax': {url: root_action, method: method}|merge(frujax)|json_encode}) %}{% endif -%}
+    {{ parent() -}}
+{% endblock %}

@@ -7,10 +7,10 @@ namespace App\Controller\Admin;
 use App\Entity\Upload\Upload;
 use Doctrine\ORM\EntityManagerInterface;
 use Ruwork\RuworkBundle\Validator\Constraints\RasterImage;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Validator\Constraints\NotNull;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
