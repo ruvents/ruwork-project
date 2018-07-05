@@ -27,7 +27,7 @@
         "ruwork/frujax-bundle": "^0.5",
         "ruwork/manual-auth-bundle": "^0.2.0",
         "ruwork/reform-bundle": "^0.1",
-        "ruwork/routing-tools-bundle": "^0.2",
+        "ruwork/routing-tools-bundle": "^0.3",
         "ruwork/runet-id-bundle": "^0.1.1",
         "ruwork/ruwork-bundle": "^0.1.4",
         "ruwork/synchronizer-bundle": "^0.1.0",

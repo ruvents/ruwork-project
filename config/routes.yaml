@@ -1,41 +1,24 @@
 _controllers:
     resource: ../src/Controller/
     type: annotation
-    defaults:
-        _locale: "%locale%"
-    requirements:
-        _locale: "%locales_pattern%"
-    options:
-        prefix_variable: _locale
+    prefix: &prefix
+        ru: /
+        en: /en
 
-about: &static
-    path: /about
-    defaults: &static_defaults
-        _controller: ruwork_template_i18n.controller
-        _locale: "%locale%"
-        template: about.html.twig
-    requirements:
-        _locale: "%locales_pattern%"
-    options:
-        prefix_variable: _locale
-
-#new:
-#    <<: *static
-#    path: /new
-#    defaults:
-#        <<: *static_defaults
-#        template: index.html.twig
+_pages:
+    resource: pages.yaml
+    prefix: *prefix
 
 logout:
     path: /logout
 
 _admin:
-    prefix: /admin
     resource: '@RuventsAdminBundle/Resources/config/routes.php'
+    prefix: /admin
 
 _upload_download:
-    prefix: /download
     resource: "@RuworkUploadBundle/Resources/config/download_route.yaml"
+    prefix: /download
     defaults:
         class: App\Entity\Upload
 

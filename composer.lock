@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7f65fe7c339c91857605250c7846ae6",
+    "content-hash": "ae3d8046209b2b8ba79ca9a08d9e87b4",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -3704,72 +3704,21 @@
             "time": "2018-06-09T10:20:22+00:00"
         },
         {
-            "name": "ruwork/route-optional-prefix",
-            "version": "0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ruvents/ruwork-route-optional-prefix.git",
-                "reference": "74532589819157420d27e5d7193564811c9fef87"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-route-optional-prefix/zipball/74532589819157420d27e5d7193564811c9fef87",
-                "reference": "74532589819157420d27e5d7193564811c9fef87",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3",
-                "symfony/routing": "^3.4 || ^4.0"
-            },
-            "require-dev": {
-                "symfony/config": "^3.4 || ^4.0",
-                "symfony/http-foundation": "^3.4 || ^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ruwork\\RouteOptionalPrefix\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Valentin Udaltsov",
-                    "email": "udaltsov@ruvents.com"
-                }
-            ],
-            "description": "Ruwork Route Optional Prefix",
-            "homepage": "https://ruvents.github.io/ruwork/",
-            "keywords": [
-                "ruwork"
-            ],
-            "time": "2018-02-16T12:50:20+00:00"
-        },
-        {
             "name": "ruwork/routing-tools-bundle",
-            "version": "0.2.1",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-routing-tools-bundle.git",
-                "reference": "c7f031be0686ffdedf228ae1cf5d8e18abb9bdc1"
+                "reference": "d0c875e07ba81072c6998079d83cbc78372f22aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-routing-tools-bundle/zipball/c7f031be0686ffdedf228ae1cf5d8e18abb9bdc1",
-                "reference": "c7f031be0686ffdedf228ae1cf5d8e18abb9bdc1",
+                "url": "https://api.github.com/repos/ruvents/ruwork-routing-tools-bundle/zipball/d0c875e07ba81072c6998079d83cbc78372f22aa",
+                "reference": "d0c875e07ba81072c6998079d83cbc78372f22aa",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
-                "ruwork/route-optional-prefix": "^0.1",
                 "symfony/config": "^3.4 || ^4.0",
                 "symfony/dependency-injection": "^3.4 || ^4.0",
                 "symfony/http-kernel": "^3.4 || ^4.0"
@@ -3777,13 +3726,14 @@
             "require-dev": {
                 "matthiasnoback/symfony-config-test": "^3.1",
                 "ruwork/bundle-test": "^0.1",
+                "ruwork/route-optional-prefix": "^0.1",
                 "symfony/property-access": "^3.4 || ^4.0",
                 "symfony/twig-bridge": "^3.4 || ^4.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1-dev"
+                    "dev-master": "0.3-dev"
                 }
             },
             "autoload": {
@@ -3806,7 +3756,7 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-05-11T12:41:28+00:00"
+            "time": "2018-07-05T13:31:51+00:00"
         },
         {
             "name": "ruwork/runet-id-bundle",
