@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae3d8046209b2b8ba79ca9a08d9e87b4",
+    "content-hash": "aec8b89158bbd746be56e50d8d02a567",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -3488,6 +3488,108 @@
                 "ruwork"
             ],
             "time": "2018-05-06T08:19:46+00:00"
+        },
+        {
+            "name": "ruwork/paginator",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ruvents/ruwork-paginator.git",
+                "reference": "7ee3767e73e2b45a8dfcdf27839f656892ba62cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ruvents/ruwork-paginator/zipball/7ee3767e73e2b45a8dfcdf27839f656892ba62cf",
+                "reference": "7ee3767e73e2b45a8dfcdf27839f656892ba62cf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "doctrine/orm": "^2.5"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ruwork\\Paginator\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Valentin Udaltsov",
+                    "email": "udaltsov@ruvents.com"
+                }
+            ],
+            "description": "Ruwork Paginator",
+            "homepage": "https://ruvents.github.io/ruwork/",
+            "keywords": [
+                "ruwork"
+            ],
+            "time": "2018-02-16T12:50:20+00:00"
+        },
+        {
+            "name": "ruwork/paginator-bundle",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ruvents/ruwork-paginator-bundle.git",
+                "reference": "e77138bf76fe47ec03aa651aa63041bf354b1e2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ruvents/ruwork-paginator-bundle/zipball/e77138bf76fe47ec03aa651aa63041bf354b1e2b",
+                "reference": "e77138bf76fe47ec03aa651aa63041bf354b1e2b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "ruwork/paginator": "^0.1",
+                "symfony/dependency-injection": "^3.4 || ^4.0",
+                "symfony/event-dispatcher": "^3.4 || ^4.0",
+                "symfony/http-kernel": "^3.4 || ^4.0"
+            },
+            "require-dev": {
+                "php": "^7.1.3",
+                "ruwork/bundle-test": "^0.1",
+                "twig/twig": "^2.4"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ruwork\\PaginatorBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Valentin Udaltsov",
+                    "email": "udaltsov@ruvents.com"
+                }
+            ],
+            "description": "Ruwork Paginator Bundle",
+            "homepage": "https://ruvents.github.io/ruwork/",
+            "keywords": [
+                "ruwork"
+            ],
+            "time": "2018-02-17T00:10:45+00:00"
         },
         {
             "name": "ruwork/polyfill-form-dti",

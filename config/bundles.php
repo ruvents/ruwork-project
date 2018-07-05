@@ -39,4 +39,5 @@ return [
     Ruwork\SynchronizerBundle\RuworkSynchronizerBundle::class => ['all' => true],
     Ruwork\TemplateI18nBundle\RuworkTemplateI18nBundle::class => ['all' => true],
     Ruwork\UploadBundle\RuworkUploadBundle::class => ['all' => true],
+    Ruwork\PaginatorBundle\RuworkPaginatorBundle::class => ['all' => true],
 ];

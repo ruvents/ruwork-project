@@ -227,6 +227,12 @@
     "ruwork/manual-auth-bundle": {
         "version": "0.1.2"
     },
+    "ruwork/paginator": {
+        "version": "0.1.1"
+    },
+    "ruwork/paginator-bundle": {
+        "version": "0.1.1"
+    },
     "ruwork/polyfill-form-dti": {
         "version": "0.2.1"
     },
