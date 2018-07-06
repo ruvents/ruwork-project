@@ -13,7 +13,7 @@ logout:
     path: /logout
 
 _admin:
-    resource: '@RuventsAdminBundle/Resources/config/routes.php'
+    resource: "@RuventsAdminBundle/Resources/config/routes.php"
     prefix: /admin
 
 _upload_download:

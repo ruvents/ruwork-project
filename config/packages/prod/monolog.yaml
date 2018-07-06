@@ -11,16 +11,16 @@ monolog:
                 - stream
                 - sentry.buffer
         stream:
-            type:   service
-            id:     app.prod.easy_log.main
+            type: service
+            id: app.prod.easy_log.main
         sentry.buffer:
             type: buffer
             handler: sentry
         sentry:
-            type:   raven
-            dsn:    "%sentry.dsn%"
+            type: raven
+            dsn: "%sentry.dsn%"
         console:
-            type:   console
+            type: console
             process_psr_3_messages: false
             channels: ['!event', '!doctrine']
 

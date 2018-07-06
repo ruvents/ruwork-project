@@ -1,5 +1,5 @@
 framework:
-    secret: '%env(APP_SECRET)%'
+    secret: "%env(APP_SECRET)%"
     csrf_protection: true
     session:
         handler_id: ~

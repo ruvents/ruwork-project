@@ -1,11 +1,11 @@
 imports:
-    - { resource: 'parameters.default.yaml' }
-    - { resource: 'parameters.yaml' }
+    - { resource: parameters.default.yaml }
+    - { resource: parameters.yaml }
 
 parameters:
     locale: ru
     locales: [ru, en]
-    locales_pattern: 'en'
+    locale_pattern: en
 
 services:
     _defaults:
@@ -20,15 +20,15 @@ services:
             #$publicDir: "%kernel.project_dir%/public"
 
     App\:
-        resource: '../src/*'
-        exclude: '../src/{Entity,Migrations,Kernel.php}'
+        resource: ../src/*
+        exclude: ../src/{Entity,Migrations,Kernel.php}
 
     App\Admin\ListField\UploadTypeGuesser:
         tags:
             - { name: ruvents_admin.list_field_type_guesser, priority: 1000 }
 
     App\Controller\:
-        resource: '../src/Controller/*'
+        resource: ../src/Controller/*
         public: true
 
     App\Feature\MetricsFeature:
