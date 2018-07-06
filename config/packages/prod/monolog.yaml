@@ -1,17 +1,31 @@
 monolog:
     handlers:
-        main:
+        fingers_crossed:
             type: fingers_crossed
             action_level: error
-            handler: nested
-            excluded_404s:
-                # regex: exclude all 404 errors from the logs
-                - ^/
-        nested:
-            type: stream
-            path: "%kernel.logs_dir%/%kernel.environment%.log"
-            level: debug
+            handler: fingers_crossed.group
+            excluded_http_codes: [403, 404]
+        fingers_crossed.group:
+            type: group
+            members:
+                - stream
+                - sentry.buffer
+        stream:
+            type:   service
+            id:     app.prod.easy_log.main
+        sentry.buffer:
+            type: buffer
+            handler: sentry
+        sentry:
+            type:   raven
+            dsn:    "%sentry.dsn%"
         console:
             type:   console
             process_psr_3_messages: false
-            channels: ["!event", "!doctrine"]
+            channels: ['!event', '!doctrine']
+
+services:
+    app.prod.easy_log.main:
+        class: EasyCorp\EasyLog\EasyLogHandler
+        arguments:
+            $stream: "%kernel.logs_dir%/%kernel.environment%.log"

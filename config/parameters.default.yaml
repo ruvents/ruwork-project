@@ -3,5 +3,6 @@ parameters:
     liip_imagine.root: "%kernel.project_dir%/public"
     runet_id.key: key
     runet_id.secret: secret
+    sentry.dsn: null
     swiftmailer.dev.delivery_address: test@test.test
     swiftmailer.dev.sender_address: test@test.test
