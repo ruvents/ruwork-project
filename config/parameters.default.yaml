@@ -1,6 +1,9 @@
 parameters:
     feature.metrics: false
     liip_imagine.root: "%kernel.project_dir%/public"
+    router.request_context.base_url: ''
+    router.request_context.host: localhost
+    router.request_context.scheme: http
     runet_id.key: key
     runet_id.secret: secret
     sentry.dsn: null
