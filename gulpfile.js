@@ -41,6 +41,7 @@ gulp.task('scripts', function () {
             'node_modules/@ruwork/frujax/frujax.js',
             'vendor/ruwork/frujax-bundle/Resources/public/frujax_part.js',
             'vendor/ruwork/frujax-bundle/Resources/public/frujax_hide_form_errors.js',
+            'vendor/ruwork/reform/Resources/assets/js/file.js',
             'assets/scripts/app.js'
         ])
         .pipe(concat('app.js'))

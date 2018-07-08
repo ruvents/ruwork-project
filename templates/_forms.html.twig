@@ -1,4 +1,5 @@
-{% use 'bootstrap_4_layout.html.twig' %}
+{% use '@RuworkReform/bootstrap_4_layout.html.twig' %}
+{% use '@RuworkReform/checkbox_false.html.twig' %}
 
 {% block form_start -%}
     {% if frujax is defined %}{% set attr = attr|merge({'data-frujax': frujax|json_encode}) %}{% endif -%}
@@ -7,5 +8,10 @@
 
 {% block attributes -%}
     {% if frujax is defined %}{% set attr = attr|merge({'data-frujax': {url: root_action, method: method}|merge(frujax)|json_encode}) %}{% endif -%}
+    {{ parent() -}}
+{% endblock %}
+
+{% block checkbox_widget -%}
+    {{ block('checkbox_false') -}}
     {{ parent() -}}
 {% endblock %}

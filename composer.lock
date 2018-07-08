@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af06c22cc91e1e4d81d8125303c4f8f9",
+    "content-hash": "1ffa59ee3a0070ebab1e60794d049ed6",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -2246,16 +2246,16 @@
         },
         {
             "name": "php-http/httplug-bundle",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/HttplugBundle.git",
-                "reference": "c91eef51db2c2b778946c1dd931e9aa87ac6b1e4"
+                "reference": "9fed9ddee92ee20cc39050749f2fb9b6cec3f83d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/HttplugBundle/zipball/c91eef51db2c2b778946c1dd931e9aa87ac6b1e4",
-                "reference": "c91eef51db2c2b778946c1dd931e9aa87ac6b1e4",
+                "url": "https://api.github.com/repos/php-http/HttplugBundle/zipball/9fed9ddee92ee20cc39050749f2fb9b6cec3f83d",
+                "reference": "9fed9ddee92ee20cc39050749f2fb9b6cec3f83d",
                 "shasum": ""
             },
             "require": {
@@ -2308,7 +2308,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.10-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "autoload": {
@@ -2342,7 +2342,7 @@
                 "message",
                 "php-http"
             ],
-            "time": "2018-03-27T07:08:16+00:00"
+            "time": "2018-07-07T09:19:05+00:00"
         },
         {
             "name": "php-http/logger-plugin",
@@ -3758,16 +3758,16 @@
         },
         {
             "name": "ruwork/reform",
-            "version": "0.1.5",
+            "version": "0.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-reform.git",
-                "reference": "54e0572d4ab46bd7909ff9f85e2194419aad81ac"
+                "reference": "8016a58b73514becb6d9a9421cfa4f2f6a912f14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-reform/zipball/54e0572d4ab46bd7909ff9f85e2194419aad81ac",
-                "reference": "54e0572d4ab46bd7909ff9f85e2194419aad81ac",
+                "url": "https://api.github.com/repos/ruvents/ruwork-reform/zipball/8016a58b73514becb6d9a9421cfa4f2f6a912f14",
+                "reference": "8016a58b73514becb6d9a9421cfa4f2f6a912f14",
                 "shasum": ""
             },
             "require": {
@@ -3801,26 +3801,26 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-06-09T10:18:11+00:00"
+            "time": "2018-07-08T20:22:40+00:00"
         },
         {
             "name": "ruwork/reform-bundle",
-            "version": "0.1.2",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-reform-bundle.git",
-                "reference": "60341ea8f168f19ce29a15daeae5e3c897b52c81"
+                "reference": "1fd6a15ffa6015ef5807b9af63219f0a4c862f4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-reform-bundle/zipball/60341ea8f168f19ce29a15daeae5e3c897b52c81",
-                "reference": "60341ea8f168f19ce29a15daeae5e3c897b52c81",
+                "url": "https://api.github.com/repos/ruvents/ruwork-reform-bundle/zipball/1fd6a15ffa6015ef5807b9af63219f0a4c862f4e",
+                "reference": "1fd6a15ffa6015ef5807b9af63219f0a4c862f4e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
                 "ruwork/polyfill-form-dti-bundle": "^0.2",
-                "ruwork/reform": "^0.1",
+                "ruwork/reform": "^0.1.7",
                 "symfony/config": "^3.4 || ^4.0",
                 "symfony/dependency-injection": "^3.4 || ^4.0",
                 "symfony/http-kernel": "^3.4 || ^4.0"
@@ -3855,7 +3855,7 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-06-09T10:20:22+00:00"
+            "time": "2018-07-08T20:24:03+00:00"
         },
         {
             "name": "ruwork/routing-tools-bundle",
