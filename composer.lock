@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ffa59ee3a0070ebab1e60794d049ed6",
+    "content-hash": "e1d294f9f9db53de69415a22dff78f5a",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -3758,16 +3758,16 @@
         },
         {
             "name": "ruwork/reform",
-            "version": "0.1.7",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-reform.git",
-                "reference": "8016a58b73514becb6d9a9421cfa4f2f6a912f14"
+                "reference": "49e2eaa699c25710c58d017520942bc418d3f823"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-reform/zipball/8016a58b73514becb6d9a9421cfa4f2f6a912f14",
-                "reference": "8016a58b73514becb6d9a9421cfa4f2f6a912f14",
+                "url": "https://api.github.com/repos/ruvents/ruwork-reform/zipball/49e2eaa699c25710c58d017520942bc418d3f823",
+                "reference": "49e2eaa699c25710c58d017520942bc418d3f823",
                 "shasum": ""
             },
             "require": {
@@ -3801,26 +3801,26 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-07-08T20:22:40+00:00"
+            "time": "2018-07-09T13:58:03+00:00"
         },
         {
             "name": "ruwork/reform-bundle",
-            "version": "0.1.3",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-reform-bundle.git",
-                "reference": "1fd6a15ffa6015ef5807b9af63219f0a4c862f4e"
+                "reference": "9c39cd61ad90e0f9b9121b154f5b0a029c0f1a1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-reform-bundle/zipball/1fd6a15ffa6015ef5807b9af63219f0a4c862f4e",
-                "reference": "1fd6a15ffa6015ef5807b9af63219f0a4c862f4e",
+                "url": "https://api.github.com/repos/ruvents/ruwork-reform-bundle/zipball/9c39cd61ad90e0f9b9121b154f5b0a029c0f1a1d",
+                "reference": "9c39cd61ad90e0f9b9121b154f5b0a029c0f1a1d",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
                 "ruwork/polyfill-form-dti-bundle": "^0.2",
-                "ruwork/reform": "^0.1.7",
+                "ruwork/reform": "^0.2.0",
                 "symfony/config": "^3.4 || ^4.0",
                 "symfony/dependency-injection": "^3.4 || ^4.0",
                 "symfony/http-kernel": "^3.4 || ^4.0"
@@ -3855,7 +3855,7 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-07-08T20:24:03+00:00"
+            "time": "2018-07-09T13:58:27+00:00"
         },
         {
             "name": "ruwork/routing-tools-bundle",

@@ -1,4 +1,4 @@
-{% use '@RuworkReform/bootstrap_4_layout.html.twig' %}
+{% use '@RuworkReform/reform_bootstrap_4_layout.html.twig' %}
 {% use '@RuworkReform/checkbox_false.html.twig' %}
 
 {% block form_start -%}
@@ -14,4 +14,19 @@
 {% block checkbox_widget -%}
     {{ block('checkbox_false') -}}
     {{ parent() -}}
+{% endblock %}
+
+{% block label_required -%}
+    <small class="text-muted">{{ 'Required'|trans({}, 'forms') }}</small>
+{%- endblock %}
+
+{% block form_label_text -%}
+    {{ parent() -}}
+    {{ required ? block('label_required') -}}
+{% endblock %}
+
+{% block checkbox_radio_label_text -%}
+    {{ parent() -}}
+    {{ label is not same as(false) ? ' ' -}}
+    {{ parent_label_class is not defined and required ? block('label_required') -}}
 {% endblock %}
