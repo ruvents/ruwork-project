@@ -23,10 +23,6 @@ services:
         resource: ../src/*
         exclude: ../src/{Entity,Migrations,Kernel.php}
 
-    App\Admin\ListField\UploadTypeGuesser:
-        tags:
-            - { name: ruvents_admin.list_field_type_guesser, priority: 1000 }
-
     App\Controller\:
         resource: ../src/Controller/*
         public: true
