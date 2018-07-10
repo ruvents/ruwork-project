@@ -22,6 +22,7 @@
 
 {% block form_label_text -%}
     {{ parent() -}}
+    {{ label is not same as(false) ? ' ' -}}
     {{ required ? block('label_required') -}}
 {% endblock %}
 
