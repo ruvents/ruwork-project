@@ -8,11 +8,14 @@ monolog:
         fingers_crossed.group:
             type: group
             members:
-                - stream
+                - stream.buffer
                 - sentry.buffer
+        stream.buffer:
+            type: buffer
+            handler: stream
         stream:
             type: service
-            id: app.prod.easy_log.main
+            id: app.prod.easy_log.stream
         sentry.buffer:
             type: buffer
             handler: sentry
@@ -25,7 +28,7 @@ monolog:
             channels: ['!event', '!doctrine']
 
 services:
-    app.prod.easy_log.main:
+    app.prod.easy_log.stream:
         class: EasyCorp\EasyLog\EasyLogHandler
         arguments:
             $stream: "%kernel.logs_dir%/%kernel.environment%.log"
