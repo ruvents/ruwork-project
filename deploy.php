@@ -13,7 +13,7 @@ function console(string $command): void
     run(sprintf('{{release_path}}/bin/console %s --no-interaction', $command));
 }
 
-/**
+/*
  * Hosts
  */
 
@@ -22,7 +22,7 @@ host('prod')
     ->user('ruwork')
     ->set('deploy_path', '/home/projects/ruwork-project');
 
-/**
+/*
  * Config
  */
 
@@ -42,7 +42,7 @@ set('shared_files', [
 
 set('composer_options', 'install --no-dev --no-suggest --no-scripts');
 
-/**
+/*
  * Tasks
  */
 

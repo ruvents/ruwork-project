@@ -27,7 +27,7 @@ final class UploadController
 
     /**
      * @Route("/admin/upload", name="admin_upload")
-     * @Template()
+     * @Template
      */
     public function __invoke(Request $request): JsonResponse
     {
