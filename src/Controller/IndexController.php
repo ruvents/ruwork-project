@@ -11,7 +11,7 @@ final class IndexController
 {
     /**
      * @Route("/", name="index")
-     * @Template
+     * @Template()
      */
     public function __invoke()
     {

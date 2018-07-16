@@ -9,7 +9,7 @@ use Ruwork\DoctrineBehaviorsBundle\Multilingual\MultilingualInterface;
 use Ruwork\DoctrineBehaviorsBundle\Multilingual\MultilingualTrait;
 
 /**
- * @ORM\Embeddable
+ * @ORM\Embeddable()
  */
 final class TextRuEnMultilingual implements MultilingualInterface
 {

@@ -10,7 +10,7 @@ trait IdTrait
 {
     /**
      * @ORM\Column(type="integer")
-     * @ORM\Id
+     * @ORM\Id()
      *
      * @var int
      */

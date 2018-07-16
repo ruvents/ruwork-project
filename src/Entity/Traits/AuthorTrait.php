@@ -14,7 +14,7 @@ trait AuthorTrait
      * @ORM\ManyToOne(targetEntity="App\Entity\User\User")
      * @ORM\JoinColumn(nullable=false)
      *
-     * @Author
+     * @Author()
      *
      * @var User
      */

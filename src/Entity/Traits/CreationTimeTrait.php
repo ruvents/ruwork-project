@@ -12,7 +12,7 @@ trait CreationTimeTrait
     /**
      * @ORM\Column(type="datetimetz_immutable")
      *
-     * @PersistTimestamp
+     * @PersistTimestamp()
      *
      * @var \DateTimeImmutable
      */

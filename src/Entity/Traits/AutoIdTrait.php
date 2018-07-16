@@ -10,7 +10,7 @@ trait AutoIdTrait
 {
     /**
      * @ORM\Column(type="integer")
-     * @ORM\Id
+     * @ORM\Id()
      * @ORM\GeneratedValue(strategy="IDENTITY")
      *
      * @var int

@@ -16,9 +16,9 @@ class Upload
 {
     /**
      * @ORM\Column(name="id", type="string")
-     * @ORM\Id
+     * @ORM\Id()
      *
-     * @Path
+     * @Path()
      *
      * @var string
      */

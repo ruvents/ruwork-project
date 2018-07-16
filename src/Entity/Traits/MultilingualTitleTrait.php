@@ -12,7 +12,7 @@ trait MultilingualTitleTrait
 {
     /**
      * @ORM\Embedded("App\Entity\Embeddables\TextRuEnMultilingual")
-     * @Multilingual
+     * @Multilingual()
      *
      * @var TextRuEnMultilingual
      */

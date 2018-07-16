@@ -13,8 +13,8 @@ trait AliasTrait
     /**
      * @ORM\Column(type="string", unique=true)
      *
-     * @Assert\NotBlank
-     * @Alias
+     * @Assert\NotBlank()
+     * @Alias()
      *
      * @var null|string
      */
