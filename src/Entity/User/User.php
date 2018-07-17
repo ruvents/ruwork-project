@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Entity\User;
 
 use App\Entity\Traits\AutoIdTrait;
-use App\Security\Attributes;
+use App\Security\Roles;
 use Doctrine\ORM\Mapping as ORM;
 use Ruwork\RuworkBundle\Security\UserTrait;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -30,7 +30,7 @@ class User implements UserInterface
      *
      * @var array
      */
-    private $roles = [Attributes::ROLE_USER];
+    private $roles = [Roles::USER];
 
     /**
      * {@inheritdoc}
