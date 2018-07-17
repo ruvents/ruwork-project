@@ -1,0 +1,3 @@
+_ruvents_admin:
+    resource: "@RuventsAdminBundle/Resources/config/routes.php"
+    prefix: /admin

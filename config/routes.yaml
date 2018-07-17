@@ -11,10 +11,3 @@ _pages:
 
 logout:
     path: /logout
-
-_admin:
-    resource: "@RuventsAdminBundle/Resources/config/routes.php"
-    prefix: /admin
-
-_liip_imagine:
-    resource: "@LiipImagineBundle/Resources/config/routing.yaml"
