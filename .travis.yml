@@ -29,8 +29,8 @@ before_script:
     - bin/console doctrine:migrations:migrate --no-interaction --allow-no-migration
 
 script:
-    - bin/console doctrine:schema:validate --no-interaction
-    - bin/console lint:twig --no-interaction templates/
+    - bin/console doctrine:schema:validate --env=prod --no-interaction
+    - bin/console lint:twig --env=prod --no-interaction templates/
 
 before_deploy:
     - curl -LO https://deployer.org/deployer.phar
