@@ -46,24 +46,20 @@ set('composer_options', 'install --no-dev --no-suggest --no-scripts');
  * Tasks
  */
 
-task('deploy:ckeditor:install', function () {
-    console('ckeditor:install --release=full --clear=drop');
-});
-
 task('deploy:assets:install', function () {
     console('assets:install {{release_path}}/public');
-});
-
-task('deploy:cache:clear', function () {
-    console('cache:clear --no-warmup');
 });
 
 task('deploy:cache:warmup', function () {
     console('cache:warmup');
 });
 
-task('deploy:yarn:install', function () {
-    runLocally('yarn install');
+task('deploy:ckeditor:install', function () {
+    console('ckeditor:install --release=full --clear=drop');
+});
+
+task('deploy:database:migrate', function () {
+    console('doctrine:migrations:migrate --allow-no-migration');
 });
 
 task('deploy:gulp:build', function () {
@@ -75,16 +71,8 @@ task('deploy:frontend:upload', function () {
     runLocally("scp -r public/build/ $host:{{release_path}}/public");
 });
 
-task('deploy:symlink:refresh', function () {
-    $releases = get('releases_list');
-
-    foreach ($releases as $release) {
-        run("touch {{deploy_path}}/releases/$release/public/index.php");
-    }
-});
-
-task('database:migrate', function () {
-    console('doctrine:migrations:migrate --allow-no-migration');
+task('deploy:yarn:install', function () {
+    runLocally('yarn install');
 });
 
 task('deploy', [
@@ -96,18 +84,20 @@ task('deploy', [
     'deploy:clear_paths',
     'deploy:shared',
     'deploy:vendors',
+    'deploy:cache:warmup',
     'deploy:ckeditor:install',
     'deploy:assets:install',
     'deploy:yarn:install',
     'deploy:gulp:build',
     'deploy:frontend:upload',
-    'deploy:cache:clear',
-    'deploy:cache:warmup',
-    'database:migrate',
+    'deploy:database:migrate',
     'deploy:symlink',
-    'deploy:symlink:refresh',
     'deploy:unlock',
     'cleanup',
 ]);
+
+/**
+ * Events
+ */
 
 after('deploy:failed', 'deploy:unlock');
