@@ -17,7 +17,7 @@ trait TitleTrait
 
     public function __toString(): string
     {
-        return (string) $this->title;
+        return $this->title ?? '';
     }
 
     public function getTitle(): ?string
