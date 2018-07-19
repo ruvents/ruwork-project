@@ -7,7 +7,7 @@ namespace App\Entity\User;
 use App\Entity\Traits\AutoIdTrait;
 use App\Security\Roles;
 use Doctrine\ORM\Mapping as ORM;
-use Ruwork\RuworkBundle\Security\UserTrait;
+use Ruwork\RuworkBundle\Security\SecurityUserTrait;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
@@ -15,8 +15,8 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class User implements UserInterface
 {
-    use UserTrait;
     use AutoIdTrait;
+    use SecurityUserTrait;
 
     /**
      * @ORM\Column(type="string")
