@@ -13,18 +13,14 @@ function console(string $command): void
     run(sprintf('{{release_path}}/bin/console %s --no-interaction', $command));
 }
 
-/*
- * Hosts
- */
+// Hosts
 
 host('prod')
     ->hostname('127.0.0.1')
     ->user('ruwork')
     ->set('deploy_path', '/home/projects/ruwork-project');
 
-/*
- * Config
- */
+// Config
 
 set('repository', 'git@github.com:ruvents/ruwork-project.git');
 
@@ -42,9 +38,7 @@ set('shared_files', [
 
 set('composer_options', 'install --no-dev --no-suggest --no-scripts');
 
-/*
- * Tasks
- */
+// Tasks
 
 task('deploy:assets:install', function () {
     console('assets:install {{release_path}}/public');
@@ -96,8 +90,6 @@ task('deploy', [
     'cleanup',
 ]);
 
-/**
- * Events
- */
+// Events
 
 after('deploy:failed', 'deploy:unlock');
