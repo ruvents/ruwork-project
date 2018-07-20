@@ -8,12 +8,14 @@ use App\Entity\Traits\AutoIdTrait;
 use App\Security\Roles;
 use Doctrine\ORM\Mapping as ORM;
 use Ruwork\RuworkBundle\Security\SecurityUserTrait;
+use Symfony\Component\Security\Core\User\EquatableInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\User\UserRepository")
  */
-class User implements UserInterface
+class User implements UserInterface, EquatableInterface, \Serializable
 {
     use AutoIdTrait;
     use SecurityUserTrait;
@@ -26,11 +28,13 @@ class User implements UserInterface
     private $email;
 
     /**
-     * @ORM\Column(type="simple_array")
+     * @ORM\Column(type="string")
      *
-     * @var array
+     * @Assert\NotBlank()
+     *
+     * @var null|string
      */
-    private $roles = [Roles::USER];
+    private $role = Roles::USER;
 
     /**
      * {@inheritdoc}
@@ -52,18 +56,49 @@ class User implements UserInterface
         return $this;
     }
 
+    public function getRole(): ?string
+    {
+        return $this->role;
+    }
+
     /**
      * {@inheritdoc}
      */
     public function getRoles(): array
     {
-        return $this->roles;
+        return [$this->role];
     }
 
-    public function setRoles(array $roles)
+    public function setRole(?string $role)
     {
-        $this->roles = $roles;
+        $this->role = $role;
 
         return $this;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function isEqualTo(UserInterface $user)
+    {
+        return $user instanceof static &&
+            $user->getId() === $this->getId() &&
+            $user->getRoles() === $this->getRoles();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serialize()
+    {
+        return serialize([$this->id, $this->email, $this->role]);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function unserialize($serialized): void
+    {
+        [$this->id, $this->email, $this->role] = unserialize($serialized);
     }
 }
