@@ -1,38 +1,22 @@
 'use strict';
 
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
-    cssnano = require('gulp-cssnano'),
-    rename = require('gulp-rename'),
-    livereload = require('gulp-livereload'),
-    suppressError = function (error) {
-        console.log(error.toString());
-        this.emit('end');
-    },
-    postcss = require('gulp-postcss'),
+var addsrc = require('gulp-add-src'),
+    autoprefixer = require('autoprefixer'),
     concat = require('gulp-concat'),
+    cssnano = require('gulp-cssnano'),
     del = require('del'),
-    addsrc = require('gulp-add-src');
+    gulp = require('gulp'),
+    livereload = require('gulp-livereload'),
+    postcss = require('gulp-postcss'),
+    postcssObjectFitImages = require('postcss-object-fit-images'),
+    rename = require('gulp-rename'),
+    sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('clean', function () {
     return del.sync([
         'public/build/{css,fonts,js}'
     ]);
-});
-
-gulp.task('scss', function () {
-    return gulp
-        .src('assets/scss/app.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .on('error', suppressError)
-        .pipe(postcss([require('autoprefixer'), require('postcss-object-fit-images')]))
-        .pipe(cssnano({zindex: false}))
-        .pipe(sourcemaps.write())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('css', {cwd: 'public/build'}))
-        .pipe(livereload());
 });
 
 gulp.task('scripts', function () {
@@ -49,6 +33,21 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('js', {cwd: 'public/build'}));
 });
 
+gulp.task('scss', function () {
+    return gulp
+        .src('assets/scss/app.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(postcss([
+            autoprefixer,
+            postcssObjectFitImages,
+        ]))
+        .pipe(cssnano({zindex: false}))
+        .pipe(sourcemaps.write())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('css', {cwd: 'public/build'}))
+        .pipe(livereload());
+});
 gulp.task('watch', function () {
     livereload.listen();
 
@@ -56,6 +55,6 @@ gulp.task('watch', function () {
     gulp.watch('assets/scripts/**/*.js', ['scripts']);
 });
 
-gulp.task('default', ['clean', 'watch', 'scss', 'scripts']);
+gulp.task('default', ['clean', 'scripts', 'scss', 'watch']);
 
-gulp.task('build', ['scss', 'scripts']);
+gulp.task('build', ['scripts', 'scss']);
