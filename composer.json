@@ -18,7 +18,7 @@
         "liip/imagine-bundle": "^2.0",
         "php-http/curl-client": "^1.7",
         "php-http/httplug-bundle": "^1.7",
-        "runet-id/api-client": "^3.0@dev",
+        "runet-id/api-client": "3.0.0-beta3",
         "ruvents/admin-bundle": "^0.7.16",
         "ruvents/doctrine-fixes-bundle": "^0.1.1",
         "ruvents/twig-extensions": "^3.2",
