@@ -30,7 +30,7 @@
         "ruwork/paginator-bundle": "^0.1.1",
         "ruwork/reform-bundle": "^0.2.0",
         "ruwork/routing-tools-bundle": "^0.3",
-        "ruwork/runet-id-bundle": "^0.1.1",
+        "ruwork/runet-id-bundle": "^0.2.1",
         "ruwork/ruwork-bundle": "^0.2.0",
         "ruwork/synchronizer-bundle": "^0.1.0",
         "ruwork/template-i18n-bundle": "^0.2.1",

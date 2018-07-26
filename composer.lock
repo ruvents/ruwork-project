@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb5a8daf27370b5b74475f67f18989d8",
+    "content-hash": "1decdb44422f376e5a93b229d1e8eb43",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -4155,21 +4155,21 @@
         },
         {
             "name": "ruwork/runet-id-bundle",
-            "version": "0.1.3",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-runet-id-bundle.git",
-                "reference": "c7998515b15b0db04211cc3d7cbbbf77e0dbbb85"
+                "reference": "609c45c5b482ee501b5b1f86fb451612d19ce502"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-runet-id-bundle/zipball/c7998515b15b0db04211cc3d7cbbbf77e0dbbb85",
-                "reference": "c7998515b15b0db04211cc3d7cbbbf77e0dbbb85",
+                "url": "https://api.github.com/repos/ruvents/ruwork-runet-id-bundle/zipball/609c45c5b482ee501b5b1f86fb451612d19ce502",
+                "reference": "609c45c5b482ee501b5b1f86fb451612d19ce502",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
-                "runet-id/api-client": "^3.0@dev",
+                "runet-id/api-client": "^3.0@beta",
                 "symfony/config": "^3.4 || ^4.0",
                 "symfony/dependency-injection": "^3.4 || ^4.0",
                 "symfony/http-kernel": "^3.4 || ^4.0"
@@ -4181,14 +4181,13 @@
                 "php-http/discovery": "^1.3",
                 "php-http/guzzle6-adapter": "^1.1",
                 "php-http/mock-client": "^1.1",
-                "ruwork/bundle-test": "^0.1",
                 "symfony/validator": "^3.4 || ^4.0",
                 "webthink/psr-test-container": "^1.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1-dev"
+                    "dev-master": "0.2-dev"
                 }
             },
             "autoload": {
@@ -4211,7 +4210,7 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-04-14T11:44:19+00:00"
+            "time": "2018-07-26T15:10:08+00:00"
         },
         {
             "name": "ruwork/ruwork-bundle",
