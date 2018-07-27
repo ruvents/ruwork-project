@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "23bde31837abc3c930c701ba94f2d86e",
+    "content-hash": "42874ed12fee0b0ac63c66163497389e",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -1223,16 +1223,16 @@
         },
         {
             "name": "easycorp/easy-log-handler",
-            "version": "dev-fixed",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ruvents/ruwork-easycorp-easy-log-handler.git",
-                "reference": "170d3dd6760d4222b8674e39d5e3231dfd4fa388"
+                "url": "https://github.com/EasyCorp/easy-log-handler.git",
+                "reference": "5f95717248d20684f88cfb878d8bf3d78aadcbba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-easycorp-easy-log-handler/zipball/170d3dd6760d4222b8674e39d5e3231dfd4fa388",
-                "reference": "170d3dd6760d4222b8674e39d5e3231dfd4fa388",
+                "url": "https://api.github.com/repos/EasyCorp/easy-log-handler/zipball/5f95717248d20684f88cfb878d8bf3d78aadcbba",
+                "reference": "5f95717248d20684f88cfb878d8bf3d78aadcbba",
                 "shasum": ""
             },
             "require": {
@@ -1246,6 +1246,7 @@
                     "EasyCorp\\EasyLog\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1268,10 +1269,7 @@
                 "monolog",
                 "productivity"
             ],
-            "support": {
-                "source": "https://github.com/ruvents/ruwork-easycorp-easy-log-handler/tree/fixed"
-            },
-            "time": "2018-07-06T12:27:29+00:00"
+            "time": "2018-07-27T15:41:37+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -5117,16 +5115,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.0.87",
+            "version": "v1.0.88",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "c2856dddbbb7c9e9327890d6f1a96e79f305236b"
+                "reference": "730ff18ed2d15ed8a0eaba8115a0cffdf53c39eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/c2856dddbbb7c9e9327890d6f1a96e79f305236b",
-                "reference": "c2856dddbbb7c9e9327890d6f1a96e79f305236b",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/730ff18ed2d15ed8a0eaba8115a0cffdf53c39eb",
+                "reference": "730ff18ed2d15ed8a0eaba8115a0cffdf53c39eb",
                 "shasum": ""
             },
             "require": {
@@ -5160,7 +5158,7 @@
                 }
             ],
             "description": "Composer plugin for Symfony",
-            "time": "2018-07-27T09:19:27+00:00"
+            "time": "2018-07-27T16:55:54+00:00"
         },
         {
             "name": "symfony/form",
@@ -8441,7 +8439,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "easycorp/easy-log-handler": 20,
         "runet-id/api-client": 10,
         "symfony/lts": 20
     },
