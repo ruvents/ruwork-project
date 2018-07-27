@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b374c2e31c94b2445310cd7fff7b02d",
+    "content-hash": "23bde31837abc3c930c701ba94f2d86e",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -1683,114 +1683,6 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
-            "name": "hostnet/form-handler-bundle",
-            "version": "1.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hostnet/form-handler-bundle.git",
-                "reference": "5bff004daf580ce941e2c47a413d806b6d52cda9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hostnet/form-handler-bundle/zipball/5bff004daf580ce941e2c47a413d806b6d52cda9",
-                "reference": "5bff004daf580ce941e2c47a413d806b6d52cda9",
-                "shasum": ""
-            },
-            "require": {
-                "hostnet/form-handler-component": "^1.4.0",
-                "php": "^5.6|^7.0",
-                "symfony/expression-language": "^2.7|^3.0|^4.0",
-                "symfony/http-foundation": "^2.7|^3.0|^4.0"
-            },
-            "require-dev": {
-                "doctrine/annotations": "^1.0",
-                "hostnet/phpcs-tool": "^4.1.0",
-                "phpunit/phpunit": "^4.7|^5.0",
-                "sensio/framework-extra-bundle": "3.*",
-                "symfony/browser-kit": "^3.0|^4.0",
-                "symfony/finder": "^2.7|^3.0|^4.0",
-                "symfony/form": "^2.7|^3.0|^4.0",
-                "symfony/framework-bundle": "^2.7|^3.0|^4.0",
-                "symfony/http-kernel": "^2.7|^3.0|^4.0",
-                "symfony/phpunit-bridge": "^2.8|^3.0|^4.0",
-                "symfony/translation": "^2.7|^3.0|^4.0",
-                "symfony/validator": "^2.7|^3.0|^4.0"
-            },
-            "suggest": {
-                "sensio/framework-extra-bundle": "To utilize form param converter."
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-4": {
-                    "Hostnet\\Bundle\\FormHandlerBundle\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Iltar van der Berg",
-                    "email": "ivanderberg@hostnet.nl"
-                },
-                {
-                    "name": "Yannick de Lange",
-                    "email": "ydelange@hostnet.nl"
-                }
-            ],
-            "description": "Hostnet form handler to provide an easier way of handling forms in actions",
-            "time": "2017-12-17T10:32:04+00:00"
-        },
-        {
-            "name": "hostnet/form-handler-component",
-            "version": "1.5.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hostnet/form-handler-component.git",
-                "reference": "87cbc8444ec20a0c66bc8e05e79a102fb7cf4b0d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hostnet/form-handler-component/zipball/87cbc8444ec20a0c66bc8e05e79a102fb7cf4b0d",
-                "reference": "87cbc8444ec20a0c66bc8e05e79a102fb7cf4b0d",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.6||^7.0",
-                "symfony/form": "^2.7||^3.0||^4.0",
-                "symfony/http-foundation": "^2.7||^3.0||^4.0"
-            },
-            "require-dev": {
-                "hostnet/phpcs-tool": "^4.1",
-                "phpunit/phpunit": "^5.4",
-                "symfony/debug": "^2.7||^3.0||^4.0",
-                "symfony/phpunit-bridge": "^2.7||^3.0||^4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Hostnet\\Component\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Iltar van der Berg",
-                    "email": "ivanderberg@hostnet.nl"
-                },
-                {
-                    "name": "Yannick de Lange",
-                    "email": "ydelange@hostnet.nl"
-                }
-            ],
-            "description": "Hostnet form handler to provide an easier way of handling forms",
-            "time": "2018-04-11T12:25:10+00:00"
-        },
-        {
             "name": "imagine/imagine",
             "version": "v0.7.1",
             "source": {
@@ -3217,72 +3109,6 @@
             "time": "2018-07-25T23:34:09+00:00"
         },
         {
-            "name": "ruvents/admin-bundle",
-            "version": "0.7.18",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vudaltsov-legacy/admin-bundle.git",
-                "reference": "fb8ff4774f5477b1344f864c71c02e67acab4e5e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vudaltsov-legacy/admin-bundle/zipball/fb8ff4774f5477b1344f864c71c02e67acab4e5e",
-                "reference": "fb8ff4774f5477b1344f864c71c02e67acab4e5e",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/doctrine-bundle": "^1.6.10",
-                "doctrine/orm": "^2.5.11",
-                "php": "^7.1.3",
-                "ruvents/paginator-bundle": "^0.1",
-                "sensio/framework-extra-bundle": "^5.0",
-                "symfony/asset": "^3.4 || ^4.0",
-                "symfony/expression-language": "^3.4 || ^4.0",
-                "symfony/form": "^3.4 || ^4.0",
-                "symfony/framework-bundle": "^3.4 || ^4.0",
-                "symfony/property-info": "^3.4 || ^4.0",
-                "symfony/security-bundle": "^3.4 || ^4.0",
-                "symfony/twig-bundle": "^3.4 || ^4.0"
-            },
-            "require-dev": {
-                "ruvents/upload-bundle": "^0.4.0@dev",
-                "symfony/console": "^3.4",
-                "symfony/debug-bundle": "^3.4",
-                "symfony/dotenv": "^3.4",
-                "symfony/flex": "^1.0",
-                "symfony/lts": "3",
-                "symfony/profiler-pack": "^1.0",
-                "symfony/stopwatch": "^3.4",
-                "symfony/validator": "^3.4",
-                "symfony/web-profiler-bundle": "^3.4",
-                "symfony/web-server-bundle": "^3.4",
-                "symfony/yaml": "^3.4"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ruvents\\AdminBundle\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Valentin Udaltsov",
-                    "email": "udaltsov@ruvents.com"
-                }
-            ],
-            "description": "RUVENTS Admin Bundle",
-            "time": "2018-04-16T14:37:40+00:00"
-        },
-        {
             "name": "ruvents/doctrine-fixes-bundle",
             "version": "0.1.1",
             "source": {
@@ -3333,96 +3159,6 @@
             ],
             "description": "RUVENTS Doctrine Fixes Bundle",
             "time": "2017-11-07T14:01:02+00:00"
-        },
-        {
-            "name": "ruvents/paginator",
-            "version": "0.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vudaltsov-legacy/paginator.git",
-                "reference": "b13c176afcc2a9ecf21c6439d13ed509f40077f6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vudaltsov-legacy/paginator/zipball/b13c176afcc2a9ecf21c6439d13ed509f40077f6",
-                "reference": "b13c176afcc2a9ecf21c6439d13ed509f40077f6",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1"
-            },
-            "require-dev": {
-                "doctrine/orm": "^2.5",
-                "phpunit/phpunit": "^6.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ruvents\\Paginator\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Valentin Udaltsov",
-                    "email": "udaltsov@ruvents.com"
-                }
-            ],
-            "description": "RUVENTS Paginator",
-            "time": "2017-11-12T21:22:27+00:00"
-        },
-        {
-            "name": "ruvents/paginator-bundle",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vudaltsov-legacy/paginator-bundle.git",
-                "reference": "e4896ae9dd479651666b522a4131175a2cb3054b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vudaltsov-legacy/paginator-bundle/zipball/e4896ae9dd479651666b522a4131175a2cb3054b",
-                "reference": "e4896ae9dd479651666b522a4131175a2cb3054b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1",
-                "ruvents/paginator": "^0.1",
-                "symfony/dependency-injection": "^3.0 || ^4.0",
-                "symfony/event-dispatcher": "^3.0 || ^4.0",
-                "symfony/http-kernel": "^3.0 || ^4.0"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ruvents\\PaginatorBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Valentin Udaltsov",
-                    "email": "udaltsov@ruvents.com"
-                }
-            ],
-            "description": "RUVENTS Paginator Bundle",
-            "time": "2017-11-11T22:00:30+00:00"
         },
         {
             "name": "ruvents/twig-extensions",
@@ -5381,16 +5117,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.0.85",
+            "version": "v1.0.87",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "48bf0eddadb004f95f6875b533ff1fb234bfc3f4"
+                "reference": "c2856dddbbb7c9e9327890d6f1a96e79f305236b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/48bf0eddadb004f95f6875b533ff1fb234bfc3f4",
-                "reference": "48bf0eddadb004f95f6875b533ff1fb234bfc3f4",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/c2856dddbbb7c9e9327890d6f1a96e79f305236b",
+                "reference": "c2856dddbbb7c9e9327890d6f1a96e79f305236b",
                 "shasum": ""
             },
             "require": {
@@ -5424,7 +5160,7 @@
                 }
             ],
             "description": "Composer plugin for Symfony",
-            "time": "2018-07-25T09:16:52+00:00"
+            "time": "2018-07-27T09:19:27+00:00"
         },
         {
             "name": "symfony/form",
@@ -7597,24 +7333,24 @@
         },
         {
             "name": "twig/extensions",
-            "version": "v1.5.1",
+            "version": "v1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig-extensions.git",
-                "reference": "d188c76168b853481cc75879ea045bf93d718e9c"
+                "reference": "2c1a86526d0044065220d1b51ac08348bea5ca82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/d188c76168b853481cc75879ea045bf93d718e9c",
-                "reference": "d188c76168b853481cc75879ea045bf93d718e9c",
+                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/2c1a86526d0044065220d1b51ac08348bea5ca82",
+                "reference": "2c1a86526d0044065220d1b51ac08348bea5ca82",
                 "shasum": ""
             },
             "require": {
-                "twig/twig": "~1.27|~2.0"
+                "twig/twig": "^1.27|^2.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "~3.3@dev",
-                "symfony/translation": "~2.3|~3.0"
+                "symfony/phpunit-bridge": "^3.4",
+                "symfony/translation": "^2.7|^3.4"
             },
             "suggest": {
                 "symfony/translation": "Allow the time_diff output to be translated"
@@ -7644,12 +7380,11 @@
                 }
             ],
             "description": "Common additional features for Twig that do not directly belong in core",
-            "homepage": "http://twig.sensiolabs.org/doc/extensions/index.html",
             "keywords": [
                 "i18n",
                 "text"
             ],
-            "time": "2017-06-08T18:19:53+00:00"
+            "time": "2018-05-22T13:26:07+00:00"
         },
         {
             "name": "twig/twig",

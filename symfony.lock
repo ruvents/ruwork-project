@@ -113,12 +113,6 @@
             "ref": "3447d538661064626c782b1122a14defa48dc0b1"
         }
     },
-    "hostnet/form-handler-bundle": {
-        "version": "1.6.1"
-    },
-    "hostnet/form-handler-component": {
-        "version": "1.5.2"
-    },
     "imagine/imagine": {
         "version": "v0.7.1"
     },
@@ -212,17 +206,8 @@
     "runet-id/api-client": {
         "version": "3.0-dev"
     },
-    "ruvents/admin-bundle": {
-        "version": "0.7.16"
-    },
     "ruvents/doctrine-fixes-bundle": {
         "version": "0.1.1"
-    },
-    "ruvents/paginator": {
-        "version": "0.1.2"
-    },
-    "ruvents/paginator-bundle": {
-        "version": "0.1.0"
     },
     "ruvents/twig-extensions": {
         "version": "3.2.2"
