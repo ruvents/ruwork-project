@@ -53,8 +53,8 @@ final class Kernel extends BaseKernel
     {
         $confDir = $this->getProjectDir().'/config';
 
-        $routes->import($confDir.'/{routes}/*'.self::CONFIG_EXTS, '/', 'glob');
-        $routes->import($confDir.'/{routes}/'.$this->environment.'/**/*'.self::CONFIG_EXTS, '/', 'glob');
         $routes->import($confDir.'/{routes}'.self::CONFIG_EXTS, '/', 'glob');
+        $routes->import($confDir.'/{routes}/'.$this->environment.'/**/*'.self::CONFIG_EXTS, '/', 'glob');
+        $routes->import($confDir.'/{routes}/*'.self::CONFIG_EXTS, '/', 'glob');
     }
 }
