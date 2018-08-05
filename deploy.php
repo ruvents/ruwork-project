@@ -36,7 +36,7 @@ set('shared_files', [
     'config/parameters.yaml',
 ]);
 
-set('composer_options', 'install --no-dev --no-suggest --no-scripts');
+set('composer_options', 'install --no-dev --no-suggest --no-scripts --verbose --prefer-dist --no-progress --no-interaction --classmap-authoritative');
 
 // Tasks
 
