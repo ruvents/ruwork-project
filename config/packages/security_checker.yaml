@@ -1,0 +1,10 @@
+services:
+    SensioLabs\Security\SecurityChecker:
+        public: false
+
+    SensioLabs\Security\Command\SecurityCheckerCommand:
+        arguments:
+            $checker: '@SensioLabs\Security\SecurityChecker'
+        public: false
+        tags:
+            - console.command
