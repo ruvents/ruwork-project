@@ -1,7 +1,0 @@
-fos_ck_editor:
-    configs:
-        admin:
-            toolbar: full
-            filebrowserImageUploadRoute: admin_upload
-            filebrowserImageUploadRouteType: 0
-            allowedContent: true

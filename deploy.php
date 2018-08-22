@@ -79,7 +79,7 @@ task('deploy', [
     'deploy:shared',
     'deploy:vendors',
     'deploy:cache:warmup',
-    'deploy:ckeditor:install',
+    //'deploy:ckeditor:install',
     'deploy:assets:install',
     'deploy:yarn:install',
     'deploy:gulp:build',
