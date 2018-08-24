@@ -27,7 +27,7 @@ set('repository', 'git@github.com:ruvents/ruwork-project.git');
 set('branch', 'master');
 
 set('shared_dirs', [
-    'public/cache',
+    'public/media',
     'public/uploads',
     'var/log',
 ]);
