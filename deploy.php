@@ -7,8 +7,9 @@ namespace Deployer;
 use Deployer\Task\Context;
 
 require 'recipe/common.php';
+require __DIR__.'/vendor/deployer/recipes/recipe/cachetool.php';
 
-function console(string $command): void
+function symfony(string $command): void
 {
     run(sprintf('{{release_path}}/bin/console %s --no-interaction', $command));
 }
@@ -16,13 +17,20 @@ function console(string $command): void
 // Hosts
 
 host('prod')
-    ->hostname('127.0.0.1')
-    ->user('ruwork')
-    ->set('deploy_path', '/home/projects/ruwork-project');
+    ->hostname('hostname')
+    ->user('user')
+    ->set('deploy_path', 'deploy_path')
+    ->set('cachetool', 'cachetool_path');
+
+// Facts
+
+set('host', static function (): string {
+    return (string) Context::get()->getHost();
+});
 
 // Config
 
-set('repository', 'git@github.com:ruvents/ruwork-project.git');
+set('repository', 'repository');
 
 set('branch', 'master');
 
@@ -40,32 +48,28 @@ set('composer_options', 'install --no-dev --no-suggest --no-scripts --verbose --
 
 // Tasks
 
-task('deploy:assets:install', function () {
-    console('assets:install {{release_path}}/public');
+task('assets:install', static function (): void {
+    symfony('assets:install {{release_path}}/public');
 });
 
-task('deploy:cache:warmup', function () {
-    console('cache:warmup');
+task('cache:warmup', static function (): void {
+    symfony('cache:warmup');
 });
 
-task('deploy:ckeditor:install', function () {
-    console('ckeditor:install --release=full --clear=drop');
+task('ckeditor:install', static function (): void {
+    symfony('ckeditor:install --release=full --clear=drop');
 });
 
-task('deploy:database:migrate', function () {
-    console('doctrine:migrations:migrate --allow-no-migration');
+task('doctrine:database:migrate', static function (): void {
+    symfony('doctrine:migrations:migrate --allow-no-migration');
 });
 
-task('deploy:gulp:build', function () {
+task('gulp:build', static function (): void {
     runLocally('node node_modules/gulp/bin/gulp.js build');
+    runLocally('scp -r public/build/ {{host}}:{{release_path}}/public');
 });
 
-task('deploy:frontend:upload', function () {
-    $host = Context::get()->getHost();
-    runLocally("scp -r public/build/ $host:{{release_path}}/public");
-});
-
-task('deploy:yarn:install', function () {
+task('yarn:install', static function (): void {
     runLocally('yarn install');
 });
 
@@ -78,13 +82,12 @@ task('deploy', [
     'deploy:clear_paths',
     'deploy:shared',
     'deploy:vendors',
-    'deploy:cache:warmup',
-    //'deploy:ckeditor:install',
-    'deploy:assets:install',
-    'deploy:yarn:install',
-    'deploy:gulp:build',
-    'deploy:frontend:upload',
-    'deploy:database:migrate',
+    'cache:warmup',
+    //'ckeditor:install',
+    'assets:install',
+    'yarn:install',
+    'gulp:build',
+    'doctrine:database:migrate',
     'deploy:symlink',
     'deploy:unlock',
     'cleanup',
@@ -93,3 +96,5 @@ task('deploy', [
 // Events
 
 after('deploy:failed', 'deploy:unlock');
+
+after('deploy:symlink', 'cachetool:clear:opcache');

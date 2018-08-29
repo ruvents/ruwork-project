@@ -33,13 +33,10 @@ script:
     - bin/console doctrine:migrations:migrate --allow-no-migration --no-interaction
     - bin/console doctrine:schema:validate --env=prod --no-interaction
 
-before_deploy:
-    - curl -LO https://deployer.org/deployer.phar
-
 deploy:
     skip_cleanup: true
     provider: script
-    script: php deployer.phar deploy prod
+    script: vendor/bin/dep deploy
     on:
         branch: master
 
