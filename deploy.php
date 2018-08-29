@@ -22,17 +22,21 @@ host('prod')
     ->set('deploy_path', 'deploy_path')
     ->set('cachetool', 'cachetool_path');
 
+// Repository
+
+set('repository', 'repository');
+
+set('branch', 'master');
+
 // Facts
 
 set('host', static function (): string {
     return (string) Context::get()->getHost();
 });
 
-// Config
+// Configuration
 
-set('repository', 'repository');
-
-set('branch', 'master');
+set('composer_options', 'install --no-dev --no-suggest --no-scripts --verbose --prefer-dist --no-progress --no-interaction --classmap-authoritative');
 
 set('shared_dirs', [
     'public/media',
@@ -43,8 +47,6 @@ set('shared_dirs', [
 set('shared_files', [
     'config/parameters.yaml',
 ]);
-
-set('composer_options', 'install --no-dev --no-suggest --no-scripts --verbose --prefer-dist --no-progress --no-interaction --classmap-authoritative');
 
 // Tasks
 
