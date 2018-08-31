@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0cbbf31b9e36e0332446ef0fdf3897c0",
+    "content-hash": "066f4348478d433996ff5f4316209f4b",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -3925,16 +3925,16 @@
         },
         {
             "name": "ruwork/ruwork-bundle",
-            "version": "0.2.0",
+            "version": "0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ruvents/ruwork-bundle.git",
-                "reference": "c5e0fba68304986225ff236b0fc0d43abe4d146f"
+                "reference": "9c31f720692a8650aff8d7d77e578a85db99f743"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruvents/ruwork-bundle/zipball/c5e0fba68304986225ff236b0fc0d43abe4d146f",
-                "reference": "c5e0fba68304986225ff236b0fc0d43abe4d146f",
+                "url": "https://api.github.com/repos/ruvents/ruwork-bundle/zipball/9c31f720692a8650aff8d7d77e578a85db99f743",
+                "reference": "9c31f720692a8650aff8d7d77e578a85db99f743",
                 "shasum": ""
             },
             "require": {
@@ -3946,9 +3946,9 @@
                 "symfony/yaml": "^3.4 || ^4.0"
             },
             "require-dev": {
-                "doctrine/annotations": "^1.5",
+                "doctrine/annotations": "^1.6",
                 "doctrine/orm": "^2.5",
-                "sensio/framework-extra-bundle": "^5.0",
+                "sensio/framework-extra-bundle": "^5.1",
                 "swiftmailer/swiftmailer": "^6.0",
                 "symfony/asset": "^3.4 || ^4.0",
                 "symfony/doctrine-bridge": "^3.4 || ^4.0",
@@ -3961,7 +3961,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2-dev"
+                    "dev-master": "0.10-dev"
                 }
             },
             "autoload": {
@@ -3984,7 +3984,7 @@
             "keywords": [
                 "ruwork"
             ],
-            "time": "2018-07-17T07:50:27+00:00"
+            "time": "2018-08-29T19:18:56+00:00"
         },
         {
             "name": "ruwork/synchronizer",
@@ -8141,16 +8141,16 @@
         },
         {
             "name": "symfony/maker-bundle",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/maker-bundle.git",
-                "reference": "a1b0d9ff35219ec36c44fcc6213056cc339a1cf8"
+                "reference": "22a9bf33868f0fed6cab013fe5231e8485d15e20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/a1b0d9ff35219ec36c44fcc6213056cc339a1cf8",
-                "reference": "a1b0d9ff35219ec36c44fcc6213056cc339a1cf8",
+                "url": "https://api.github.com/repos/symfony/maker-bundle/zipball/22a9bf33868f0fed6cab013fe5231e8485d15e20",
+                "reference": "22a9bf33868f0fed6cab013fe5231e8485d15e20",
                 "shasum": ""
             },
             "require": {
@@ -8171,7 +8171,8 @@
                 "doctrine/orm": "^2.3",
                 "friendsofphp/php-cs-fixer": "^2.8",
                 "symfony/phpunit-bridge": "^3.4|^4.0",
-                "symfony/process": "^3.4|^4.0"
+                "symfony/process": "^3.4|^4.0",
+                "symfony/yaml": "^3.4|^4.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -8202,7 +8203,7 @@
                 "scaffold",
                 "scaffolding"
             ],
-            "time": "2018-08-07T16:05:09+00:00"
+            "time": "2018-08-30T01:08:06+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
