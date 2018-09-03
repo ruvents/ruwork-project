@@ -36,7 +36,7 @@ script:
 deploy:
     skip_cleanup: true
     provider: script
-    script: vendor/bin/dep deploy
+    script: vendor/bin/dep deploy -vv
     on:
         branch: master
 
