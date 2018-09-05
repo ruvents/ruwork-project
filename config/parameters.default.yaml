@@ -4,10 +4,7 @@ parameters:
     router.request_context.base_url: ''
     router.request_context.host: localhost
     router.request_context.scheme: http
-    runet_id.clients:
-        default:
-            key: "%runet_id.key%"
-            secret: "%runet_id.secret%"
+    runet_id.clients: { default: { key: "%runet_id.key%", secret: "%runet_id.secret%" } }
     runet_id.default_client: default
     runet_id.key: key
     runet_id.secret: secret
