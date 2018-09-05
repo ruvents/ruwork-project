@@ -1,5 +1,5 @@
-about:
-    path: /about
-    controller: ruwork_template_i18n.controller
-    defaults:
-        template: about.html.twig
+#about:
+#    path: /about
+#    controller: ruwork_template_i18n.controller
+#    defaults:
+#        template: about.html.twig
