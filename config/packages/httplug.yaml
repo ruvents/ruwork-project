@@ -11,9 +11,6 @@ httplug:
         uri_factory: Http\Message\UriFactory\GuzzleUriFactory
         stream_factory: Http\Message\StreamFactory\GuzzleStreamFactory
 
-    profiling:
-        captured_body_length: 1000
-
     discovery:
         client: httplug.client.guzzle6
         async_client: httplug.client.guzzle6
