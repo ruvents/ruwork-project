@@ -2,7 +2,7 @@
     "name": "ruwork-project",
     "devDependencies": {
         "@ruwork/frujax": "^0.7.2",
-        "bootstrap": "~4.1.0",
+        "bootstrap": "~4.1.3",
         "del": "^3.0.0",
         "gulp": "^3.9.1",
         "gulp-add-src": "^1.0.0",
