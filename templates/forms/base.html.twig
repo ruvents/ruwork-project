@@ -29,5 +29,5 @@
 {% block checkbox_radio_label_text -%}
     {{ parent() -}}
     {{ label is not same as(false) ? ' ' -}}
-    {{ parent_label_class is not defined and required ? block('label_required') -}}
+    {{ parent_label_class is not defined and required and 'radio' not in block_prefixes ? block('label_required') -}}
 {% endblock %}
