@@ -122,6 +122,12 @@
     "gregwar/captcha-bundle": {
         "version": "v2.0.4"
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.3"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
     "guzzlehttp/psr7": {
         "version": "1.4.2"
     },
@@ -173,11 +179,11 @@
     "php-http/client-common": {
         "version": "1.7.0"
     },
-    "php-http/curl-client": {
-        "version": "v1.7.0"
-    },
     "php-http/discovery": {
         "version": "1.4.0"
+    },
+    "php-http/guzzle6-adapter": {
+        "version": "v1.1.1"
     },
     "php-http/httplug": {
         "version": "v1.1.0"
