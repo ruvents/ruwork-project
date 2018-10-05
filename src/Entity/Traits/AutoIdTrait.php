@@ -15,10 +15,14 @@ trait AutoIdTrait
      *
      * @var int
      */
-    protected $id = 0;
+    protected $id;
 
     public function getId(): int
     {
+        if (null === $this->id) {
+            throw new \LogicException('Id should not be accessed on non-persisted entity.');
+        }
+
         return $this->id;
     }
 }
