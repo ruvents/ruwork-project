@@ -46,7 +46,6 @@
         "symfony/form": "^4.1",
         "symfony/framework-bundle": "^4.1",
         "symfony/lock": "^4.1",
-        "symfony/lts": "^4@dev",
         "symfony/monolog-bundle": "^3.2.0",
         "symfony/property-access": "^4.1",
         "symfony/property-info": "^4.1",
@@ -119,7 +118,7 @@
     "extra": {
         "symfony": {
             "id": "01C8T3K9FCNC3FD2G38674Y3FH",
-            "allow-contrib": false
+            "require": "~4.1.0"
         }
     }
 }
