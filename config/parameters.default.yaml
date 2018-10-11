@@ -1,5 +1,4 @@
 parameters:
-    feature.metrics: false
     liip_imagine.root: "%kernel.project_dir%/public"
     router.request_context.base_url: ''
     router.request_context.host: localhost

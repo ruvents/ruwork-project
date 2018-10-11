@@ -5,5 +5,3 @@ framework:
         handler_id: ~
     php_errors:
         log: true
-    assets:
-        version_strategy: Ruwork\RuworkBundle\Asset\VersionStrategy\FilemtimeStrategy
