@@ -33,6 +33,7 @@
         "ruwork/synchronizer-bundle": "^0.1.0",
         "ruwork/template-i18n-bundle": "^0.3.0",
         "ruwork/upload-bundle": "^0.5.1",
+        "ruwork/validator-constraints": "^0.12.10",
         "sensio/framework-extra-bundle": "^5.1",
         "sensiolabs/security-checker": "^4.1",
         "sentry/sentry": "^1.9",

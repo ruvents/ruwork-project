@@ -299,6 +299,9 @@
     "ruwork/upload-bundle": {
         "version": "0.1.3"
     },
+    "ruwork/validator-constraints": {
+        "version": "0.12.10"
+    },
     "sebastian/comparator": {
         "version": "3.0.2"
     },

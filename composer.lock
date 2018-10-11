@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d5414d3aa66bd59dd531732fb959884",
+    "content-hash": "239ad648f2d3cb35e2fda74e4fed5e19",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -4318,6 +4318,56 @@
                 "ruwork"
             ],
             "time": "2018-07-30T02:45:13+00:00"
+        },
+        {
+            "name": "ruwork/validator-constraints",
+            "version": "0.12.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ruvents/ruwork-validator-constraints.git",
+                "reference": "6e8a2d45d48a7fcb869d83ba253e6c7439272c96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ruvents/ruwork-validator-constraints/zipball/6e8a2d45d48a7fcb869d83ba253e6c7439272c96",
+                "reference": "6e8a2d45d48a7fcb869d83ba253e6c7439272c96",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/validator": "^3.4 || ^4.0"
+            },
+            "suggest": {
+                "ext-intl": "*",
+                "symfony/translation": "For translating validation errors."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.12-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ruwork\\ValidatorConstraints\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Valentin Udaltsov",
+                    "email": "udaltsov@ruvents.com"
+                }
+            ],
+            "description": "Ruwork Validator Constraints",
+            "homepage": "https://ruvents.github.io/ruwork/",
+            "keywords": [
+                "ruwork"
+            ],
+            "time": "2018-10-11T17:08:55+00:00"
         },
         {
             "name": "sensio/framework-extra-bundle",
