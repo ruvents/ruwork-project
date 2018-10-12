@@ -25,4 +25,5 @@ services:
 
     App\Controller\:
         resource: ../src/Controller/*
+        autoconfigure: false
         public: true
